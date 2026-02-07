@@ -63,7 +63,7 @@ public class PlayerAttack : MonoBehaviour
     {
         attackLocked = true;
         movement.canMove = false;
-        animator.SetTrigger("SlashAttack");
+        animator.SetTrigger("ForwardSpearThrust");
 
         yield return new WaitForSeconds(0.1f);
 
@@ -102,7 +102,7 @@ public class PlayerAttack : MonoBehaviour
     {
         attackLocked = true;
         movement.canMove = false;
-        animator.SetTrigger("SweepAttack");
+        animator.SetTrigger("OverheadSpearSlash");
 
         yield return new WaitForSeconds(0.3f);
         meleeHitbox.ActivateHitbox();
