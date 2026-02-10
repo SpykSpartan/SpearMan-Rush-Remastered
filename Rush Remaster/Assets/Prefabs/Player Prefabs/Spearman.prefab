@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6134485903638302}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_PinkyFinger.005.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3649534827538710530}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.005.R.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3718088636884744244}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_IndexFinger.003.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3504019089930461079}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_ThumbFinger.006.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8644239510523686642}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_IndexFinger.006.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 768779080565669260}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IK_ElbowPole.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2191592407829166363}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_PinkyFinger.004.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3072326040609489770}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailDown.004.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2305861765480481532}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_Toes.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3974821335691803578}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_IndexFinger.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6840118374077645543}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_MiddleFinger.006.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2500302461087501194}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_PinkyFinger.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -390,7 +390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1041653355326652948}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IK_KneePole.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5405139142691254978}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.003.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -454,7 +454,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7688047472030775420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.001.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -485,7 +485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5855220893995966566}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.004.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,7 +516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5403300969076462312}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_UpperTorso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -548,7 +548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1865727677294745195}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.004.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -580,7 +580,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 989426803609375360}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailUp.005.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -612,7 +612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1923657682053675310}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IK_UpperHalfController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -650,7 +650,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 239011408138657056}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_RingFinger.003.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,7 +681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4584415845849072300}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.003.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,7 +713,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1254621730495436638}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_RingFinger.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -745,7 +745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2586650142125987799}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_PinkyFinger.004.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -776,7 +776,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6618828074233952416}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.005.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -807,7 +807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3384111075204900847}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.003.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -839,7 +839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3917866278164531701}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Hand.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -870,7 +870,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7082462393752461463}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_ThumbFinger.005.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -902,7 +902,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7566129770033080954}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FootRoll.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -934,7 +934,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1446066116564570301}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_IndexFinger.006.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -966,7 +966,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2195204792472732479}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IK_ElbowPole.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -997,7 +997,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3626261406069786015}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.004.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1029,7 +1029,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1324187181405613147}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_Rotation.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1061,7 +1061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8517319404668361082}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_MiddleFinger.004.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1092,7 +1092,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9127788063750856868}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailDown.005.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1124,7 +1124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1553541086691401317}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_MiddleFinger.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1155,7 +1155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2141131550467046389}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_UpperLeg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1187,7 +1187,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7493418300042404055}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_ToesIK.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1218,7 +1218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1368811864755468655}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_RingFinger.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1249,7 +1249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1440755875094949764}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_LowerLeg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1281,7 +1281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5629645212186603538}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.001.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1313,7 +1313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7734858587563471236}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_RingFinger.006.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1344,7 +1344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7529978880110585657}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_LowerArm.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1376,7 +1376,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1615150542504136820}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Bone.025.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1407,7 +1407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5234759463809635663}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.002.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1439,7 +1439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8494521810815391697}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.002.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1470,7 +1470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2028833550706032328}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_PinkyFinger.003.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1502,7 +1502,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3528356342475840868}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FK_Leg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1535,7 +1535,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6644420814882169811}
   - component: {fileID: 8133834442952203832}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: waist_guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1941,7 +1941,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8867827448354104568}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_UpperArm.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1973,7 +1973,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7904989032872319517}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FootControl.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2007,7 +2007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1468787286100597658}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_IndexFinger.004.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2038,7 +2038,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6392761936487462801}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_UpperLeg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2070,7 +2070,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 875837217728019883}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.004.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2101,7 +2101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5991098695221275128}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BackFootControl.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2133,7 +2133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4189437363252797216}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_RingFinger.004.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2164,7 +2164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7508448554255047650}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Bridge.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2196,7 +2196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3206813769079948186}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Toes.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2227,7 +2227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2383437412426042880}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_PinkyFinger.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2258,7 +2258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3608248367747717226}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_RingFinger.006.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2290,7 +2290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3292279517220761515}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_LowerLeg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2322,7 +2322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1452733865929219363}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_MiddleFinger.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2354,7 +2354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8667985399624313654}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_IndexFinger.003.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2386,7 +2386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3137567139674741426}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.003.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2418,7 +2418,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7424279926685314209}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2450,7 +2450,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 195171982158427135}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_MiddleFinger.004.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2481,7 +2481,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7714413871964295154}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_Toes.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2512,7 +2512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7626198826662364388}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_MiddleFinger.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2544,7 +2544,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2854246569292478882}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK/IK SwitchArm.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2576,7 +2576,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5892481899782274751}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_LowerArm.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2607,7 +2607,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2399702742027341166}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_RingFinger.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2639,7 +2639,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7369155677983423117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailUp.005.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2671,7 +2671,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 886692485198683390}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_LeftSideRoll.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2703,7 +2703,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6154567202806322436}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_RingFinger.004.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2735,7 +2735,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4748393914934386946}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.005.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2767,7 +2767,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7643238236142461155}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_Toes.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2798,7 +2798,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1884255363174941596}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_MiddleFinger.006.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2829,7 +2829,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2981946551052195955}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2861,7 +2861,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5927141057266302250}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IndexFingerControl.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2893,7 +2893,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3147404390465608569}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_RightSideRoll.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2925,7 +2925,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7381817168867418377}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_IndexFinger.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2957,7 +2957,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7186494556419015105}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2989,7 +2989,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3294244727523430070}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FK_LowerArm.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3021,7 +3021,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4101980855065034024}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3053,7 +3053,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4019332182049807878}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_UpperLeg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3085,7 +3085,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7195630167350541018}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK/IK SwitchArm.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3116,7 +3116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3553967188820876354}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_LowerArm.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3147,7 +3147,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1324167825963303022}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_LowerArm.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3178,7 +3178,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4287503897663739306}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3210,7 +3210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5447101316262704342}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BackFootControl.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3241,7 +3241,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6977103394823990313}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_LowerTorso.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3273,7 +3273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8109997857782471516}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.003.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3305,7 +3305,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6294993738150624351}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IndexFingerControl.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3336,7 +3336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6699128100202034904}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_LowerLeg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3368,7 +3368,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1737588539777973774}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.001.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3400,7 +3400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4645673308867745827}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_Hand.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3431,7 +3431,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3549180871242133982}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Bone.025.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3463,7 +3463,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7026704327063736460}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_Bone.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3496,7 +3496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8259553550205795385}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BackFootControl.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3527,7 +3527,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2402204058727654427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_MiddleFinger.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3559,7 +3559,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 43201296681116517}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_ToesIK.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3591,7 +3591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4419183900214042863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_MiddleFinger.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3622,7 +3622,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7997681975225444362}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_PinkyFinger.004.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3654,7 +3654,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7201978319302076275}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.003.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3686,7 +3686,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4214694350897302898}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_MiddleFinger.005.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3718,7 +3718,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4839676170160595207}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BackFootControl.001.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3749,7 +3749,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9168387721830107250}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Bone.007.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3783,7 +3783,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6477910616234081746}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.004.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3815,7 +3815,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5045186153572310515}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_ThumbFinger.004.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3846,7 +3846,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5961002779741707863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_ThumbFinger.003.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3877,7 +3877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3887302804561572494}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailUp.003.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3909,7 +3909,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6528128654109926345}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.002.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3941,7 +3941,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2833149492883498173}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.005.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3973,7 +3973,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5170488807031110203}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FootControl.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4007,7 +4007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1378076422079714401}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_LowerLeg.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4038,7 +4038,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5621482133763052484}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.003.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4070,7 +4070,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6601780191578127138}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.003.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4102,7 +4102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7898793122329277419}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_MiddleFinger.003.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4134,7 +4134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4930181492491880268}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Toes.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4166,7 +4166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2132898183732540331}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailDown.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4198,7 +4198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7839835983018644837}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.004.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4230,7 +4230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5496345503532055292}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Clavicle.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4262,7 +4262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2088156194947606264}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_PinkyFinger.005.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4293,7 +4293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3788402900879479432}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.005.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4325,7 +4325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 115809105605583222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.005.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4357,7 +4357,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2730906550331348651}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_PinkyFinger.006.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4389,7 +4389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5274885604601747560}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_RingFinger.003.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4420,7 +4420,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8192764476309069359}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_RingFinger.006.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4452,7 +4452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6575699384683495362}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FK_UpperLeg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4484,7 +4484,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3114942290896091296}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_ThumbFinger.005.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4516,7 +4516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5760288930889423771}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_Toes.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4548,7 +4548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6923011637218188551}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.004.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4579,7 +4579,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5713321820950562519}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_BackFoot.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4613,7 +4613,7 @@ GameObject:
   - component: {fileID: 6552285523777301528}
   - component: {fileID: 7604085216977926323}
   - component: {fileID: 6819755369682475584}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4681,7 +4681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3177782011125753959}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_MiddleFinger.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4713,7 +4713,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7232046236641622664}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4745,7 +4745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4245438157150482846}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4777,7 +4777,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2438181906859604039}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_UpperBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4819,7 +4819,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3417570483722420843}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_TopHead_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4850,7 +4850,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4450195582486445852}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailUp.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4882,7 +4882,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 221360069190447731}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_ThumbFinger.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4914,7 +4914,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3553332108239069542}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_ThumbFinger.004.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4946,7 +4946,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1730921341302286917}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_IndexFinger.005.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4977,7 +4977,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6683024412784900295}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.005.L.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5009,7 +5009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3956666139590334187}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.001.R.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5041,7 +5041,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5693297049270420301}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_Bridge.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5073,7 +5073,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4710528149429214445}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Bone.012.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5104,7 +5104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 845220323272104312}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Hand.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5136,7 +5136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9141899680165518364}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_UpperArm.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5168,7 +5168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7122087382669448343}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_LowerLeg.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5199,7 +5199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2186974399634458024}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_UpperTorso_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5230,7 +5230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8167352138672497155}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_RingFinger.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5262,7 +5262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3163849563759405252}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK/IK SwitchLeg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5294,7 +5294,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2052428268295090720}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_Toes.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5325,7 +5325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4874258458711546132}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BackFootControl.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5357,7 +5357,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2611160290055865701}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_IndexFinger.005.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5389,7 +5389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1822910189596719770}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_LowerLeg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5421,7 +5421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5170625462321821118}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.003.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5453,7 +5453,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3878042409324471549}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.002.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5485,7 +5485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4072102656830501478}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.004.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5517,7 +5517,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8201475159055670774}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BackFootControl.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5549,7 +5549,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7253927641879651828}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_IndexFinger.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5581,7 +5581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7882476059328097570}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_UpperLeg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5614,7 +5614,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7619949446818899278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.005.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5646,7 +5646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4840224516041234066}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_PinkyFinger.004.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5677,7 +5677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 152291193155369088}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_LowerLeg.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5708,7 +5708,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224091114100035992}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.003.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5740,7 +5740,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1726259900567435785}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.005.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5771,7 +5771,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4792879160691371736}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.004.L.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5803,7 +5803,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5164524349966082551}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Toes.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5834,7 +5834,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5622673534117725928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.002.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5865,7 +5865,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6710335761341939474}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IK_Hand.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5897,7 +5897,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2954097261597726401}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Face_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5928,7 +5928,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7306565008870712780}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailDown.003.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5960,7 +5960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4193954630934507269}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_Weapon.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5991,7 +5991,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2619213488637541274}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_MiddleFinger.003.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6022,7 +6022,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5437220307710041513}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_LowerArm.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6054,7 +6054,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7506662547314513172}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IK_KneePole.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6086,7 +6086,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2967976384933644945}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_UpperArm.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6118,7 +6118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7824997722128212330}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.001.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6150,7 +6150,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7709559171156038163}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_IndexFinger.004.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6181,7 +6181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4110045762507863843}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Bone.007.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6215,7 +6215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1287090569318612139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.005.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6247,7 +6247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 494429145236694565}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.003.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6279,7 +6279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6178457881236562535}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_PinkyFinger.006.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6310,7 +6310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 141143907981960582}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_MiddleFinger.005.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6341,7 +6341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3039545130083292437}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.001.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6373,7 +6373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2291744895876398657}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BackFootControl.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6405,7 +6405,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1350896081982304209}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6440,7 +6440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5886647639839196169}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_TopHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6472,7 +6472,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4719557328929459587}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_RingFinger.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6504,7 +6504,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8338249976876871867}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6536,7 +6536,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2080539280103589794}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_LowerTorso.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6568,7 +6568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927956009435922105}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_IndexFinger.005.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6600,7 +6600,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 870977144562404388}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_RingFinger.004.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6632,7 +6632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1424127776878668631}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_TopHead_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6663,7 +6663,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6777648819204836635}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_UpperLeg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6695,7 +6695,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4723512499336509931}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_Hand.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6726,7 +6726,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4410540944062782887}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_Hand.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6757,7 +6757,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9123783457644547780}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_PinkyFinger.006.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6788,7 +6788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5455108251594293017}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_ThumbFinger.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6819,7 +6819,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 723119275452732462}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.003.R.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6851,7 +6851,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2191100719830620682}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_Clavicle.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6883,7 +6883,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 832960119600751587}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_RightSideRoll.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6915,7 +6915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3890460965394703386}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_LegFootIKBridge.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6947,7 +6947,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5817174248263673805}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.001.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6978,7 +6978,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9139097994841752542}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_MidTorso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7010,7 +7010,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3496887157783886092}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_ToesIK.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7042,7 +7042,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4190378349179981422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailUp.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7074,7 +7074,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1081263221629817010}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_Jaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7106,7 +7106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8996800803499115277}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.001.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7137,7 +7137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 174717811338826147}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FK_Hand.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7169,7 +7169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 269661790250134637}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.002.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7200,7 +7200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9076542288535608476}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_PinkyFinger.006.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7232,7 +7232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5845378049168298140}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.004.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7263,7 +7263,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6706816019063759478}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IndexFingerControl.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7295,7 +7295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3730023484264381001}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_ThumbFinger.003.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7326,7 +7326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6771366120746944387}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_PinkyFinger.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7358,7 +7358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7231073042478545094}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.001.L.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7390,7 +7390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9079249990659172616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.005.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7422,7 +7422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2354276884443905016}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_PinkyFinger.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7454,7 +7454,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9007422335640712543}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_MiddleFinger.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7486,7 +7486,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7605748775279331587}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.003.L.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7518,7 +7518,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 519607235848615955}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Bridge.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7550,7 +7550,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3780670963330784055}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK/IK SwitchLeg.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7581,7 +7581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 998228128720692836}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_ThumbFinger.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7613,7 +7613,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5649307808331576643}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.001.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7644,7 +7644,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 425867536177733739}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.005.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7676,7 +7676,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3288660129402981043}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_IndexFinger.003.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7708,7 +7708,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6553613239845559272}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.003.L.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7740,7 +7740,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6436814257823648514}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7772,7 +7772,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8658105215817093879}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_IndexFinger.003.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7803,7 +7803,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3894496532349311306}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_LowerLeg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7835,7 +7835,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 129634341773942474}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.003.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7867,7 +7867,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8252760017315778335}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Bone.012.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7898,7 +7898,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7916054622681219215}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_IndexFinger.005.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7929,7 +7929,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1432965036704287598}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailUp.003.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7961,7 +7961,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3579918847319303744}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.003.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7992,7 +7992,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2146261862811452037}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IK_LowerHalfController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8027,7 +8027,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2522888420059776100}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.002.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8059,7 +8059,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1711551128594838500}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Neck_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8090,7 +8090,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2345273218939217186}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_LowerTorso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8122,7 +8122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5644758443498880089}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.004.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8154,7 +8154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1918022220797444375}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_RingFinger.004.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8185,7 +8185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3715526493817578444}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_Toes.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8217,7 +8217,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1648470567354075661}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_ToesIK.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8248,7 +8248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8156807138866808503}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailDown.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8280,7 +8280,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6271919743702515231}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_LegFootIKBridge.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8312,7 +8312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6399274024149205676}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_UpperLeg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8345,7 +8345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 717149304884830949}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.001.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8377,7 +8377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8677620386598572782}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.005.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8409,7 +8409,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5020763675188422771}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_ThumbFinger.006.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8441,7 +8441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6901300807051627616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_PinkyFinger.003.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8473,7 +8473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5623619082135088303}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.005.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8505,7 +8505,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4303221320113281608}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Armature.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8604,7 +8604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4957824152587857152}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_RingFinger.005.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8635,7 +8635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2390932486637213275}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_RingFinger.005.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8667,7 +8667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9106099943248575783}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK/IK SwitchArm.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8699,7 +8699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1392671333476260798}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FK_UpperArm.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8732,7 +8732,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6990472582091722571}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_UpperArm.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8764,7 +8764,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7595171184737369165}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_PinkyFinger.005.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8796,7 +8796,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4175075165452057721}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_RingFinger.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8828,7 +8828,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1145691860448544390}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_INT_MidTorso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8860,7 +8860,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6709284488753478640}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_PinkyFinger.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8892,7 +8892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3369817533310334012}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.001.L.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8924,7 +8924,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 746521103114519839}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Bone.012.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8956,7 +8956,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4154885334498553908}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.002.L.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8988,7 +8988,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3412093534725466157}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FK_UpperArm.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9021,7 +9021,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6169878243803797775}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_Hand.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9053,7 +9053,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4009040874208374071}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_PinkyFinger.003.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9084,7 +9084,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2416554876476257371}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9116,7 +9116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4037845803493916432}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FK_UpperLeg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9148,7 +9148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4020034073477708536}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_UpperTorso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9180,7 +9180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4715938880986421688}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9212,7 +9212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1480047402666536589}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_Rotation.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9244,7 +9244,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8190989903922894004}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.002.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9276,7 +9276,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4270648397941654097}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_LowerLeg.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9307,7 +9307,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2264507645645085310}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.003.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9338,7 +9338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8225987028525815061}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.001.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9370,7 +9370,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1632812855827746904}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Jaw_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9401,7 +9401,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3137836693019628277}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FK_LowerArm.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9433,7 +9433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3571670078705859914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FK_LowerLeg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9465,7 +9465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4951224741116589973}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.001.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9496,7 +9496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1576024807240322092}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IK_KneePole.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9527,7 +9527,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3189499033256735142}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.003.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9558,7 +9558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4298465319510381229}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_PinkyFinger.003.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9589,7 +9589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8438940358914246971}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FK_Leg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9621,7 +9621,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6345882527230353903}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9653,7 +9653,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2527633030473386995}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.004.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9685,7 +9685,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2737763158162580400}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_LowerArm.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9716,7 +9716,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 202791988614658573}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_Hand.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9748,7 +9748,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 322684839400901932}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.002.L.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9780,7 +9780,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3411217742664577376}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_MiddleFinger.006.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9811,7 +9811,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9105915801735511792}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_RingFinger.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9842,7 +9842,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1481269060753819460}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_MiddleFinger.004.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9874,7 +9874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2765332615002656599}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailUp.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9906,7 +9906,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5628898127826523566}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.005.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9938,7 +9938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7936018422654600114}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_LowerLeg.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9969,7 +9969,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8192300843330325616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.002.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10001,7 +10001,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9163034677170662485}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_BackFoot.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10033,7 +10033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8676999823703495351}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_ThumbFinger.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10064,7 +10064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 73764928318165116}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_UpperArm.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10096,7 +10096,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6273959963689992967}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_MiddleFinger.006.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10128,7 +10128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8833537762399759629}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.004.R.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10160,7 +10160,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 545571320916151034}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.005.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10192,7 +10192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 420164992193823803}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailUp.004.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10224,7 +10224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4728921781802424466}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FK_LowerLeg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10256,7 +10256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7126940778804747336}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.005.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10287,7 +10287,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5986841010914184319}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_MiddleFinger.004.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10319,7 +10319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5564361744539040958}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Bone.025.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10350,7 +10350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3154180539771416209}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK/IK SwitchLeg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10382,7 +10382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7864627654410337575}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.004.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10414,7 +10414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 898868572999666900}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.002.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10446,7 +10446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4759245022181733561}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.004.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10478,7 +10478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8058391445120256680}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.001.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10509,7 +10509,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7794658964116638018}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_MiddleFinger.003.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10541,7 +10541,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2898997672039556763}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10573,7 +10573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4754408759203511305}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.004.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10606,7 +10606,7 @@ GameObject:
   - component: {fileID: 4734704538818191109}
   - component: {fileID: 5470874775472151103}
   - component: {fileID: 4256117564252404751}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spear.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10689,7 +10689,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6488258721214640363}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IK_ElbowPole.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10721,7 +10721,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 806123951992261999}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10754,7 +10754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1662520020417465373}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_TopHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10786,7 +10786,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7659751689420664284}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_RingFinger.003.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10818,7 +10818,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6168606199594384491}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_ThumbFinger.006.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10850,7 +10850,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7810981687454470604}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_LowerArm.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10882,7 +10882,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9145375624849878373}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_ThumbFinger.004.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10914,7 +10914,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 205369069217344540}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_PinkyFinger.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10946,7 +10946,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2385455920177184143}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Toes.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10978,7 +10978,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4065211441136942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_UpperLeg.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11009,7 +11009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8736642779385973930}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_LowerArm.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11043,7 +11043,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 717183353987051986}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_Bridge.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11075,7 +11075,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7828225789783388941}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.003.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11107,7 +11107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3106089365571173155}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.005.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11139,7 +11139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5647776990659917326}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailUp.004.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11171,7 +11171,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5446517182000989072}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_LowerLeg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11203,7 +11203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6884652488790998310}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.005.L.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11235,7 +11235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4565867540578472573}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_UpwardsFootRotation.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11267,7 +11267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6488512639590285680}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailDown.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11299,7 +11299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6169621011334242316}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.003.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11331,7 +11331,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6480394560524778888}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_UpperArm.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11363,7 +11363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 871999630871731915}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_Toes.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11395,7 +11395,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8656286386647201108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_Hand.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11436,7 +11436,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3840063660754654146}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailUp.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11481,7 +11481,7 @@ GameObject:
   - component: {fileID: 2057286172727504612}
   - component: {fileID: 5477878888180504577}
   - component: {fileID: 2269044861925937282}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spearman
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -11957,7 +11957,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2973114337921269542}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_Jaw_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11988,7 +11988,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1723770475537519278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.004.R.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12020,7 +12020,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7576689912550767602}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_ThumbFinger.006.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12051,7 +12051,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1982962860503145342}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.004.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12083,7 +12083,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1445240019630036706}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.004.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12115,7 +12115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4861299484197705760}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BackFootControl.001.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12146,7 +12146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6605622535889485075}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_Hand.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12187,7 +12187,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3080964868881995553}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.002.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12218,7 +12218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3191175426798126638}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.003.R.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12250,7 +12250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8870081107232428430}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailDown.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12282,7 +12282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1016891389920010158}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_RingFinger.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12314,7 +12314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5820371846940949314}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Jaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12346,7 +12346,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3464230059991748271}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_LowerArm.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12378,7 +12378,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 576479243210301209}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.004.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12410,7 +12410,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7862466379324932768}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_MiddleFinger.003.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12441,7 +12441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1230896996408918194}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.002.R.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12473,7 +12473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6264062489929063200}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FootRoll.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12505,7 +12505,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5564523368952442994}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12537,7 +12537,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5829831256162282320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_UpperLeg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12569,7 +12569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6877124435171580591}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_Hand.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12601,7 +12601,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6207223080672343678}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_UpwardsFootRotation.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12633,7 +12633,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7172132417867655021}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.005.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12664,7 +12664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5343372207809220733}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_ThumbFinger.005.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12695,7 +12695,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8475651424639993420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.002.R.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12727,7 +12727,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1131704287496710853}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_Weapon.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12760,7 +12760,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3826497598326771493}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_LowerArm.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12794,7 +12794,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7906874137628443243}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.005.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12825,7 +12825,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6104507183797123080}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12857,7 +12857,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3051517025408760966}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.001.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12889,7 +12889,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8047401014444566029}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_Bridge.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12921,7 +12921,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5361293685397966139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IK_Hand.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12953,7 +12953,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3020094459803816127}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_Bridge.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12985,7 +12985,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7281574797597356116}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_UpperLeg.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13016,7 +13016,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9180786162948318358}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.004.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13047,7 +13047,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8067293882570458677}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13079,7 +13079,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3252023444457484198}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.002.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13111,7 +13111,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8727899983038010153}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.003.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13143,7 +13143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3775653194070148992}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_UpperLeg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13175,7 +13175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2564056556642130603}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_PinkyFinger.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13206,7 +13206,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8613340200924861606}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_LeftSideRoll.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13238,7 +13238,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6299346006893305490}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_RingFinger.005.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13270,7 +13270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8034044367490152890}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_RingFinger.005.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13301,7 +13301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7971043008182159353}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_LowerLeg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13333,7 +13333,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8398857083212424283}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_ThumbFinger.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13365,7 +13365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1469734588942654844}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.005.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13397,7 +13397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5259796279419549874}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_MiddleFinger.005.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13429,7 +13429,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4079025478464240440}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IndexFingerControl.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13460,7 +13460,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 754959557669407995}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13492,7 +13492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4673403520549075243}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_LowerTorso.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13523,7 +13523,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2195279136621977106}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13555,7 +13555,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 624750282547365949}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_UpperTorso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13589,7 +13589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7307935883203258251}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_IndexFinger.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13621,7 +13621,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8837747654110053648}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13653,7 +13653,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 606834060971836333}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_ThumbFinger.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13685,7 +13685,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2244327142762648762}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.005.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13717,7 +13717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1757164058982641245}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_ThumbFinger.004.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13748,7 +13748,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3592624376041096420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13780,7 +13780,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2101568701310259787}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK/IK SwitchLeg.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13811,7 +13811,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 315880667182687903}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_IndexFinger.006.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13842,7 +13842,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5215086925057924687}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_ThumbFinger.003.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13874,7 +13874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3435172324851907395}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_PinkyFinger.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13906,7 +13906,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6649806357664072816}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_IndexFinger.004.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13938,7 +13938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7780334636201803950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_ThumbFinger.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13970,7 +13970,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7574218638843932569}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Hand.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14002,7 +14002,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6364378459579824955}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_IndexFinger.006.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14034,7 +14034,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1798653300050461923}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_ThumbFinger.005.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14065,7 +14065,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 885274354268074738}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14097,7 +14097,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9114828033646702974}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.001.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14129,7 +14129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2618991504832848736}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_LowerLeg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14161,7 +14161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6586379874719203716}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.005.R.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14193,7 +14193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7073324839149556356}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_FK_Hand.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14225,7 +14225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8218455902623197147}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IK_LowerLeg.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14256,7 +14256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8101963437151860557}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_PinkyFinger.005.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14287,7 +14287,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 144188805688081652}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_Hand.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14318,7 +14318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6010872362937817442}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_Toes.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14349,7 +14349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 802218601593085214}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.003.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14380,7 +14380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2913557049428947044}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailDown.005.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14412,7 +14412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3642832927894527213}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IK_ElbowPole.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14443,7 +14443,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6114874150422955416}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.005.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14474,7 +14474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8580532797646626739}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.005.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14506,7 +14506,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7063857529317769698}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_MiddleFinger.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14538,7 +14538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4761566147390608372}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailDown.004.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14570,7 +14570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5539155251082601326}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_MiddleFinger.005.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14601,7 +14601,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6852212901081223434}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.002.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14632,7 +14632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2063991453874438802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_BeltDetailDown.003.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14664,7 +14664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5719425935459635512}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_ThumbFinger.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14696,7 +14696,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6320700953613916776}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_ThumbFinger.003.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14728,7 +14728,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3920685517026295675}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.004.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14760,7 +14760,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6149452694194947189}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.003.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14791,7 +14791,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 771066468373005232}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.002.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14822,7 +14822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9112428801847545245}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.004.L.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14854,7 +14854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6066683513537367714}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailDown.004.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14886,7 +14886,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4349087077267864996}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_Face_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14917,7 +14917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1962954795011016002}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_IndexFinger.004.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14949,7 +14949,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4297659879951693047}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailUp.004.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14981,7 +14981,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1767704901679483762}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_Clavicle.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15014,7 +15014,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3460380878219938917}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_IK_KneePole.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15045,7 +15045,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 408503778458592325}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_LowerTorso.002_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15076,7 +15076,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6985898127146357696}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK/IK SwitchArm.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15107,7 +15107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1653796565711793887}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.003.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15138,7 +15138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8330445152709198784}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.003.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15170,7 +15170,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8732481714470870681}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CTL_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15204,7 +15204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9058229846563822255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Bone.012.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15236,7 +15236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7548653157418941283}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FK_Hand.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15268,7 +15268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1344417914226618868}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Bone.025.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15300,7 +15300,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8631356735240663745}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_Clavicle.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15333,7 +15333,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8526779908732108699}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: INT_BeltDetailDown.001.R.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15365,7 +15365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4619727877849328998}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_RingFinger.006.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15396,7 +15396,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5443716956093004358}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MCH_RingFinger.003.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15428,7 +15428,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7418972359479200150}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DEF_BeltDetailUp.004.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15507,6 +15507,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blood VFX
       objectReference: {fileID: 0}
+    - target: {fileID: 4877175982818833121, guid: 5411f4d289f8cfb43aa4a1f2fb134a60, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5309000398186906837, guid: 5411f4d289f8cfb43aa4a1f2fb134a60, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15571,12 +15579,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1441831092466702125, guid: 6f6c177e1d8eb944db7a1af4d21edd0f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441831092466702125, guid: 6f6c177e1d8eb944db7a1af4d21edd0f, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1907810269141592433, guid: 6f6c177e1d8eb944db7a1af4d21edd0f, type: 3}
       propertyPath: m_Name
       value: Heal VFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907810269141592433, guid: 6f6c177e1d8eb944db7a1af4d21edd0f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907810269141592433, guid: 6f6c177e1d8eb944db7a1af4d21edd0f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7549704845707408327, guid: 6f6c177e1d8eb944db7a1af4d21edd0f, type: 3}
       propertyPath: m_Enabled
