@@ -12,13 +12,13 @@ public class TestBoss : BossAIBase
     protected override void SwordSlash()
     {
         base.SwordSlash();
-        Debug.Log("Fire Boss slash adds burn damage");
+        Debug.Log("slash");
     }
 
     protected override void AreaAttack()
     {
         base.AreaAttack();
-        Debug.Log("Fire explosion AoE");
+        Debug.Log("explosion AoE");
     }
 
     protected override void UseAbility()
@@ -64,5 +64,25 @@ public class TestBoss : BossAIBase
         }
 
         return false;
+    }
+
+    protected override void ApplyStatBoost()
+    {
+        isBoostActive = true;
+
+        swordDamage = Mathf.RoundToInt(baseSwordDamage * 1.25f);
+        areaDamage = Mathf.RoundToInt(baseAreaDamage * 1.25f);
+
+        Debug.Log("Damage increased by 25%");
+    }
+
+    protected override void EndStatBoost()
+    {
+        isBoostActive = false;
+
+        swordDamage = baseSwordDamage;
+        areaDamage = baseAreaDamage;
+
+        Debug.Log("damage boost ended");
     }
 }
