@@ -67,6 +67,8 @@ public class PlayerAttack : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
 
+        bool didHit = false;
+
         Vector3 origin = transform.position
                         + Camera.main.transform.forward * rayOffset.z
                         + Vector3.up * 1f
@@ -82,15 +84,16 @@ public class PlayerAttack : MonoBehaviour
             if (damageable != null)
             {
                 float modDamage = Mathf.Round(stabDamage * statSystem.damageMultiplier);
-                int finalDamage = (int)modDamage;
-                damageable.TakeDamage(finalDamage);
+                damageable.TakeDamage((int)modDamage);
                 statSystem.RegisterDamageAction();
+                didHit = true;
             }
         }
 
-        yield return new WaitForSeconds(0.8f);
+        if (didHit) attackSFX.PlayAttack();
+        else attackSFX.PlayMiss();
 
-        PlayBashSFX();
+        yield return new WaitForSeconds(0.8f);
 
         movement.canMove = true;
 
@@ -105,12 +108,15 @@ public class PlayerAttack : MonoBehaviour
         animator.SetTrigger("OverheadSpearSlash");
 
         yield return new WaitForSeconds(0.3f);
+
         meleeHitbox.ActivateHitbox();
 
-        yield return new WaitForSeconds(0.2f);
-        PlaySlashSFX();
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.5f);
+
         meleeHitbox.DeactivateHitbox();
+
+        if (meleeHitbox.didHit) attackSFX.PlayAttack();
+        else attackSFX.PlayMiss();
 
         movement.canMove = true;
 
@@ -118,16 +124,16 @@ public class PlayerAttack : MonoBehaviour
         attackLocked = false;
     }
 
-    public void PlayBashSFX()
+    public void PlayMissSFX()
     {
         if (attackSFX != null)
-            attackSFX.PlayBash();
+            attackSFX.PlayMiss();
     }
 
-    public void PlaySlashSFX()
+    public void PlayAttackSFX()
     {
         if (attackSFX != null)
-            attackSFX.PlaySlash();
+            attackSFX.PlayAttack();
     }
 
     private void PerformParry()

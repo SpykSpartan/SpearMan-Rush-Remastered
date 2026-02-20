@@ -6,22 +6,18 @@ public class PlayerAttackAudioManager : MonoBehaviour
     public AudioSource sfxSource;
 
     [Header("Attack Sounds")]
-    public AudioClip[] bashSounds;
-    public AudioClip[] slashSounds;
+    public AudioClip[] attackSounds;
+    public AudioClip[] missSounds;
 
-    public void PlayBash()
+    public void PlayAttack()
     {
-        if (bashSounds.Length == 0 || sfxSource == null) return;
-
-        AudioClip clip = bashSounds[Random.Range(0, bashSounds.Length)];
-        sfxSource.PlayOneShot(clip);
+        if (attackSounds == null || attackSounds.Length == 0 || sfxSource == null) return;
+        sfxSource.PlayOneShot(attackSounds[Random.Range(0, attackSounds.Length)]);
     }
 
-    public void PlaySlash()
+    public void PlayMiss()
     {
-        if (slashSounds.Length == 0 || sfxSource == null) return;
-
-        AudioClip clip = slashSounds[Random.Range(0, slashSounds.Length)];
-        sfxSource.PlayOneShot(clip);
+        if (missSounds == null || missSounds.Length == 0 || sfxSource == null) return;
+        sfxSource.PlayOneShot(missSounds[Random.Range(0, missSounds.Length)]);
     }
 }

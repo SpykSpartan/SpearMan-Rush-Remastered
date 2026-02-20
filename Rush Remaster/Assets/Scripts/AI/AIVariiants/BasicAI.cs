@@ -105,7 +105,7 @@ public class BasicAI : EnemyAIBase
             animator.SetTrigger(selectedTrigger);
 
             if (attackSFX != null)
-                attackSFX.PlaySlash();
+                attackSFX.PlayAttack();
 
             if (attackHitbox != null)
             {
