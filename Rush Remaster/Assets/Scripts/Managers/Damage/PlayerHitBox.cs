@@ -6,16 +6,19 @@ public class PlayerHitbox : MonoBehaviour
 {
     public int damage = 15;
     public float modDamage;
+
+    public bool didHit;
+
     private HashSet<GameObject> damagedEnemies = new HashSet<GameObject>();
     private bool isActive = false;
 
     [SerializeField] private PlayerStat statSystem;
-
     [SerializeField] private Transform pivotTransform;
 
     public void ActivateHitbox()
     {
         damagedEnemies.Clear();
+        didHit = false;
         isActive = true;
 
         if (Camera.main != null && pivotTransform != null)
@@ -43,16 +46,19 @@ public class PlayerHitbox : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (!isActive) return;
-
         if (!other.CompareTag("Enemy")) return;
 
         IDamageable damageable = other.GetComponent<IDamageable>();
         if (damageable != null && !damagedEnemies.Contains(other.gameObject))
         {
-            modDamage = Mathf.Round(damage + statSystem.damageMultiplier);
+            modDamage = Mathf.Round(damage * statSystem.damageMultiplier);
             int finalDamage = (int)modDamage;
+
             damageable.TakeDamage(finalDamage);
             damagedEnemies.Add(other.gameObject);
+
+            didHit = true;
+
             statSystem.RegisterDamageAction();
             Debug.Log($"Player hit {other.name} for {finalDamage} damage");
         }

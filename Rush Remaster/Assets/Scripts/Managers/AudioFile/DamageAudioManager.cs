@@ -5,8 +5,12 @@ public class DamageAudioManager : MonoBehaviour
     [Header("Audio Source")]
     public AudioSource audioSource;
 
-    [Header("Damage Sounds")]
+    [Header("Damage Sounds (random)")]
     public AudioClip[] damageClips;
+
+    [Header("Single Event Sounds")]
+    public AudioClip heartBeatClip;
+    public AudioClip healClip;
 
     private void Awake()
     {
@@ -21,5 +25,21 @@ public class DamageAudioManager : MonoBehaviour
 
         int index = Random.Range(0, damageClips.Length);
         audioSource.PlayOneShot(damageClips[index]);
+    }
+
+    public void PlayHeartBeat()
+    {
+        if (audioSource == null || heartBeatClip == null)
+            return;
+
+        audioSource.PlayOneShot(heartBeatClip);
+    }
+
+    public void PlayHeal()
+    {
+        if (audioSource == null || healClip == null)
+            return;
+
+        audioSource.PlayOneShot(healClip);
     }
 }

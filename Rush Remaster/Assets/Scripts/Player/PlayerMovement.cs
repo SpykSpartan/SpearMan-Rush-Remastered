@@ -42,10 +42,11 @@ public class PlayerMovement : MonoBehaviour, IMovementDetector
 
     private Vector3 lastMoveDirection = Vector3.zero;
     private Vector3 _moveDirection = Vector3.zero; 
-
     private bool isSprinting = false;               
 
     [SerializeField] private PlayerStat statSystem;
+
+    private FootstepAudio footstepAudio;
 
     void Start()
     {
@@ -55,6 +56,8 @@ public class PlayerMovement : MonoBehaviour, IMovementDetector
             cameraTransform = Camera.main.transform;
 
         _prevPos = transform.position;
+
+        footstepAudio = GetComponent<FootstepAudio>();
     }
 
     void Update()
@@ -151,6 +154,9 @@ public class PlayerMovement : MonoBehaviour, IMovementDetector
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
             animator.SetTrigger("Jump");
+
+            if (footstepAudio != null)
+                footstepAudio.PlayJump();
         }
     }
 
@@ -166,6 +172,9 @@ public class PlayerMovement : MonoBehaviour, IMovementDetector
     IEnumerator BounceAction()
     {
         isSpecialActive = true;
+
+        if (footstepAudio != null)
+            footstepAudio.PlayDash();
 
         float timer = 0f;
         Vector3 bounceDirection = cameraTransform.forward;
@@ -197,6 +206,10 @@ public class PlayerMovement : MonoBehaviour, IMovementDetector
     IEnumerator Dodge()
     {
         isSpecialActive = true;
+
+        if (footstepAudio != null)
+            footstepAudio.PlayDash();
+
         float timer = 0f;
 
         if (lastMoveDirection == Vector3.zero)
