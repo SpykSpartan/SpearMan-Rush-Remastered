@@ -42,6 +42,11 @@ public class healthSystem : MonoBehaviour, IDamageable
     private PlayerMovement playerMovement;
     private UnityEngine.AI.NavMeshAgent aiAgent;
 
+    [Header("Low Health Post Processing")]
+    public bool enableLowHealthPostFX = true;
+    public int lowHealthThreshold = 25;
+    public postprocesshotswapper postProcessController;
+
     private void Start()
     {
         statSystem = GetComponent<PlayerStat>();
@@ -57,6 +62,7 @@ public class healthSystem : MonoBehaviour, IDamageable
             currentHealth = maxHealth;
 
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
+        CheckLowHealthPostFX();
     }
 
     private void Update()
@@ -64,26 +70,21 @@ public class healthSystem : MonoBehaviour, IDamageable
         if (!CompareTag("Player")) return;
 
         if (Input.GetKeyDown(KeyCode.R))
-        {
             TryStartRegen();
-        }
     }
 
     public void UpdateMaxHealth()
     {
         if (statSystem != null)
-        {
             maxHealth = Mathf.RoundToInt(baseMaxHealth * statSystem.healthMultiplier);
-        }
         else
-        {
             maxHealth = baseMaxHealth;
-        }
 
         if (currentHealth > maxHealth)
             currentHealth = maxHealth;
 
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
+        CheckLowHealthPostFX();
     }
 
     public void TakeDamage(int amount)
@@ -100,16 +101,12 @@ public class healthSystem : MonoBehaviour, IDamageable
 
         Debug.Log($"{gameObject.name} took {amount} damage. Health now: {currentHealth}");
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
+        CheckLowHealthPostFX();
 
         if (currentHealth <= 0)
-        {
             Die();
-        }
-        else
-        {
-            if (regenCoroutine != null)
-                StopRegen("Took damage, regen cancelled.");
-        }
+        else if (regenCoroutine != null)
+            StopRegen("Took damage, regen cancelled.");
     }
 
     private void SpawnHitVFX()
@@ -117,7 +114,6 @@ public class healthSystem : MonoBehaviour, IDamageable
         if (hitVFXObject == null) return;
 
         ParticleSystem ps = hitVFXObject.GetComponent<ParticleSystem>();
-
         hitVFXObject.SetActive(true);
 
         if (ps != null)
@@ -141,6 +137,7 @@ public class healthSystem : MonoBehaviour, IDamageable
 
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
+        CheckLowHealthPostFX();
 
         SpawnHealVFX();
     }
@@ -148,9 +145,8 @@ public class healthSystem : MonoBehaviour, IDamageable
     private void SpawnHealVFX()
     {
         if (healVFX == null) return;
-        
-        ParticleSystem ps = healVFX.GetComponent<ParticleSystem>();
 
+        ParticleSystem ps = healVFX.GetComponent<ParticleSystem>();
         healVFX.SetActive(true);
 
         if (ps != null)
@@ -162,7 +158,6 @@ public class healthSystem : MonoBehaviour, IDamageable
         StartCoroutine(DisableHealVFX(healVFXDuration));
     }
 
-
     private IEnumerator DisableHealVFX(float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -173,6 +168,7 @@ public class healthSystem : MonoBehaviour, IDamageable
     {
         currentHealth = Mathf.Clamp(amount, 0, maxHealth);
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
+        CheckLowHealthPostFX();
     }
 
     public void TryStartRegen()
@@ -180,9 +176,7 @@ public class healthSystem : MonoBehaviour, IDamageable
         if (!enableRegen || IsDead || currentHealth >= maxHealth) return;
 
         if (regenCoroutine == null)
-        {
             regenCoroutine = StartCoroutine(RegenerateHealth());
-        }
     }
 
     private IEnumerator RegenerateHealth()
@@ -206,6 +200,15 @@ public class healthSystem : MonoBehaviour, IDamageable
             regenCoroutine = null;
             Debug.Log($"Regen stopped. Reason: {reason}");
         }
+    }
+
+    private void CheckLowHealthPostFX()
+    {
+        if (!enableLowHealthPostFX || postProcessController == null)
+            return;
+
+        bool lowHealth = currentHealth <= lowHealthThreshold;
+        postProcessController.Dark = lowHealth;
     }
 
     private void Die()
@@ -250,7 +253,6 @@ public class healthSystem : MonoBehaviour, IDamageable
         }
 
         yield return new WaitForSeconds(deathAnimLength);
-
         Destroy(gameObject);
     }
 }
