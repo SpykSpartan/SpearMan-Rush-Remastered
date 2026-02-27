@@ -11770,7 +11770,6 @@ GameObject:
   - component: {fileID: 8692260268686548727}
   - component: {fileID: 7414295896895393741}
   - component: {fileID: 1883070286549388775}
-  - component: {fileID: 2057286172727504612}
   - component: {fileID: 5477878888180504577}
   - component: {fileID: 2269044861925937282}
   m_Layer: 6
@@ -12075,14 +12074,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 20c201a68470c4c4abf3c3a261a4f518, type: 3}
   heartBeatClip: {fileID: 8300000, guid: bf7a9f72846dd1a44992bfaaed387d1e, type: 3}
   healClip: {fileID: 8300000, guid: 2914b18c3928d0f4dae3f094d1d75e66, type: 3}
---- !u!81 &2057286172727504612
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6704829616085398470}
-  m_Enabled: 1
 --- !u!82 &5477878888180504577
 AudioSource:
   m_ObjectHideFlags: 0

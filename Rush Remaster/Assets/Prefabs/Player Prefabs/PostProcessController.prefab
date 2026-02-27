@@ -45,7 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   URD: {fileID: 11400000, guid: 5422997d5f3d4dd45ba8b2b96ec34cd8, type: 2}
-  RFs: []
+  RFs:
+  - {fileID: -6507593343971244242, guid: 5422997d5f3d4dd45ba8b2b96ec34cd8, type: 2}
+  - {fileID: 5173443616060411973, guid: 5422997d5f3d4dd45ba8b2b96ec34cd8, type: 2}
+  - {fileID: 253113234931861121, guid: 5422997d5f3d4dd45ba8b2b96ec34cd8, type: 2}
   Dark: 0
   Purple: 0
   Weird: 0
