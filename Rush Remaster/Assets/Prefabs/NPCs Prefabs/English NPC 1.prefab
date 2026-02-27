@@ -3219,6 +3219,10 @@ MonoBehaviour:
   hitVFXDuration: 0.25
   healVFXDuration: 0.25
   vfxSpawnPoint: {fileID: 275748164626049858}
+  bloodOrbSpawner: {fileID: 0}
+  enableLowHealthPostFX: 1
+  lowHealthThreshold: 25
+  postProcessController: {fileID: 0}
 --- !u!82 &7175339074530367289
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3411,8 +3415,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -5059546707334645193, guid: 46db2a896ae547344b9058f851c29378, type: 3}
-  - {fileID: 3528203759435278835, guid: 46db2a896ae547344b9058f851c29378, type: 3}
+  - {fileID: 2100000, guid: e0960d4baba0fb5428c7fae6e9fb6bad, type: 2}
+  - {fileID: 2100000, guid: 1d890ac9489696c4f8a517f1105266eb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
