@@ -235,7 +235,7 @@ public class healthSystem : MonoBehaviour, IDamageable
 
     private IEnumerator HandleDeathSequence()
     {
-        float deathAnimLength = 2f;
+        float deathAnimLength = 0.5f;
 
         if (animator != null)
         {

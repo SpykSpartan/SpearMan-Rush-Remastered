@@ -3207,7 +3207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4a34ce7f120a0240ab0cd6d59b52428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseMaxHealth: 100
+  baseMaxHealth: 48
   currentHealth: 0
   isInvulnerable: 0
   enableRegen: 1
@@ -3219,7 +3219,6 @@ MonoBehaviour:
   hitVFXDuration: 0.25
   healVFXDuration: 0.25
   vfxSpawnPoint: {fileID: 275748164626049858}
-  bloodOrbSpawner: {fileID: 0}
   enableLowHealthPostFX: 1
   lowHealthThreshold: 25
   postProcessController: {fileID: 0}

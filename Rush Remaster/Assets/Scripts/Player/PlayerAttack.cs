@@ -93,7 +93,7 @@ public class PlayerAttack : MonoBehaviour
         if (didHit) attackSFX.PlayAttack();
         else attackSFX.PlayMiss();
 
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.3f);
 
         movement.canMove = true;
 
@@ -107,11 +107,9 @@ public class PlayerAttack : MonoBehaviour
         movement.canMove = false;
         animator.SetTrigger("OverheadSpearSlash");
 
-        yield return new WaitForSeconds(0.3f);
-
         meleeHitbox.ActivateHitbox();
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.4f);
 
         meleeHitbox.DeactivateHitbox();
 
