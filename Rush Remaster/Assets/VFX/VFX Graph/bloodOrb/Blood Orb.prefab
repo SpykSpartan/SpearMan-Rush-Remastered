@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 208781049871084901}
   - component: {fileID: 8600703585746057571}
   - component: {fileID: 5114029139705100148}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Blood Orb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials: []
+  m_Materials:
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -147,5 +148,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e379e41a0d914714ba983effbbcc190b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloodVortex: {fileID: 7131347743738754811, guid: 692935fdd01241f4bb02bc51a701a5bb,
-    type: 3}
+  bloodVortex: {fileID: 7131347743738754811, guid: 692935fdd01241f4bb02bc51a701a5bb, type: 3}
