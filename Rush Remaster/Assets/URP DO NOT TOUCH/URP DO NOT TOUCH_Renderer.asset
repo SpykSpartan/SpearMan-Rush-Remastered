@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DarkOverlay
   m_EditorClassIdentifier: 
   m_Active: 0
-  passMaterial: {fileID: 2100000, guid: 78a08787ca30045abb69f6f7dd878e09, type: 2}
+  passMaterial: {fileID: -876546973899608171, guid: 8b6171bb89005a24a92274d8423edd87, type: 3}
   injectionPoint: 600
   requirements: -1
   passIndex: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: WonkyOverlay
   m_EditorClassIdentifier: 
   m_Active: 0
-  passMaterial: {fileID: 2100000, guid: 78a08787ca30045abb69f6f7dd878e09, type: 2}
+  passMaterial: {fileID: -876546973899608171, guid: 5b5fa759e86e91a46ae2357ee6de41fb, type: 3}
   injectionPoint: 600
   requirements: -1
   passIndex: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: PurpleOverlay
   m_EditorClassIdentifier: 
   m_Active: 0
-  passMaterial: {fileID: 2100000, guid: 78a08787ca30045abb69f6f7dd878e09, type: 2}
+  passMaterial: {fileID: 2100000, guid: fd72090a570b4f64d933ba83eaf6f0e1, type: 2}
   injectionPoint: 600
   requirements: 0
   passIndex: 0

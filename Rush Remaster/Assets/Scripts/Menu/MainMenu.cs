@@ -10,11 +10,6 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Game Scene");
     }
 
-    public void PlayShitGame()
-    {
-        SceneManager.LoadScene("ShittyScene");
-    }
-
     public void QuitGame()
     {
         Application.Quit();
