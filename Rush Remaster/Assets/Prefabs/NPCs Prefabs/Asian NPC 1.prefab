@@ -7524,7 +7524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4a34ce7f120a0240ab0cd6d59b52428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseMaxHealth: 100
+  baseMaxHealth: 32
   currentHealth: 0
   isInvulnerable: 0
   enableRegen: 1
@@ -7536,6 +7536,9 @@ MonoBehaviour:
   hitVFXDuration: 0.25
   healVFXDuration: 0.25
   vfxSpawnPoint: {fileID: 7545130711763674291}
+  enableLowHealthPostFX: 1
+  lowHealthThreshold: 25
+  postProcessController: {fileID: 0}
 --- !u!82 &8335050763523332785
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10395,8 +10398,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1749363138024945096, guid: 7bcfaee28de1f7f4ab2c8a142bead9f4, type: 3}
-  - {fileID: 6031204082820583825, guid: 7bcfaee28de1f7f4ab2c8a142bead9f4, type: 3}
+  - {fileID: 2100000, guid: 0f5999675957d4c46bdbfc1853c1b0f3, type: 2}
+  - {fileID: 2100000, guid: 4d21f9c2b460b49478f6aba687a438ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
