@@ -7545,7 +7545,7 @@ AudioSource:
   m_GameObject: {fileID: 6073284562477793191}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 5361065610151073180, guid: e9898da41d001334793bd7c23514d412, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
@@ -7645,8 +7645,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 983980fc8887f2541a539be113d939c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
-  damageClips: []
+  audioSource: {fileID: 8335050763523332785}
+  damageClips:
+  - {fileID: 8300000, guid: 20c201a68470c4c4abf3c3a261a4f518, type: 3}
+  - {fileID: 8300000, guid: 785eebe6acf1c1848bb41a48f4300fe3, type: 3}
+  - {fileID: 8300000, guid: ee740abe2ebddac44ab9ced38053768e, type: 3}
+  heartBeatClip: {fileID: 8300000, guid: bf7a9f72846dd1a44992bfaaed387d1e, type: 3}
+  healClip: {fileID: 8300000, guid: 2914b18c3928d0f4dae3f094d1d75e66, type: 3}
 --- !u!114 &2803466060415763064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7659,9 +7664,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 218a51b078e61ba4caa0641dd6952364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxSource: {fileID: 0}
-  bashSounds: []
-  slashSounds: []
+  sfxSource: {fileID: 8335050763523332785}
+  attackSounds:
+  - {fileID: 8300000, guid: cf60c615ac98f884d8105686e8c48c94, type: 3}
+  - {fileID: 8300000, guid: 5b62b891de130cd4d829aecf18277039, type: 3}
+  - {fileID: 8300000, guid: 74c2b222e9c216a42a4255d3b3e61f05, type: 3}
+  missSounds:
+  - {fileID: 8300000, guid: d6c1b7753fa35c444899f99b65fdd6e1, type: 3}
+  - {fileID: 8300000, guid: 1f27ef7c07089c1468d9dee687a6fbaf, type: 3}
+  - {fileID: 8300000, guid: ac96402c423662b49a421a9771da2c78, type: 3}
+  - {fileID: 8300000, guid: 89438e4c56b733e43a253101ff336cbc, type: 3}
 --- !u!1 &6085700407379218922
 GameObject:
   m_ObjectHideFlags: 0
