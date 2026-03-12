@@ -18,6 +18,7 @@ public abstract class BossAIBase : MonoBehaviour
     [Header("References")]
     protected NavMeshAgent agent;
     protected Transform player;
+    protected Animator animator;
 
     [Header("Detection")]
     public float detectionRange = 20f;
@@ -79,9 +80,11 @@ public abstract class BossAIBase : MonoBehaviour
     float dashTravelled;
     HashSet<Collider> dashHitTargets = new HashSet<Collider>();
 
+
     protected virtual void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
     }
 
     protected virtual void Start()
@@ -99,7 +102,6 @@ public abstract class BossAIBase : MonoBehaviour
         if (!player) return;
 
         UpdateTimers();
-
         HandleStatBoost();
 
         if (currentState != BossState.Idle &&
@@ -112,24 +114,38 @@ public abstract class BossAIBase : MonoBehaviour
         HandleMovementAndDecisions();
     }
 
-    protected void HandleStatBoost()
+    void UpdateAnimator()
     {
-        if (!isBoostActive && statBoostTimer <= 0)
-        {
-            ApplyStatBoost();
-            isBoostActive = true;
-            actionTimer = statBoostDuration;
-        }
+        if (!animator) return;
 
-        if (isBoostActive)
+        animator.SetBool("BasicMovement", currentState == BossState.Chasing);
+
+        switch (currentState)
         {
-            actionTimer -= Time.deltaTime;
-            if (actionTimer <= 0)
-            {
-                EndStatBoost();
-                statBoostTimer = statBoostCooldown;
-            }
+            case BossState.SwordAttack:
+                animator.SetTrigger("WeaponAttack");
+                break;
+
+            case BossState.AreaAttack:
+                animator.SetTrigger("AreaAttack");
+                break;
+
+            case BossState.DashAttack:
+                animator.SetTrigger("ChargingPart1");
+                break;
+
+            case BossState.Ability:
+                animator.SetTrigger("EnrageAbility");
+                break;
         }
+    }
+
+    protected void SetState(BossState newState)
+    {
+        if (currentState == newState) return;
+
+        currentState = newState;
+        UpdateAnimator();
     }
 
     protected void HandleMovementAndDecisions()
@@ -162,12 +178,6 @@ public abstract class BossAIBase : MonoBehaviour
             StartSwordAttack();
     }
 
-    protected void SetState(BossState newState)
-    {
-        if (currentState == newState) return;
-        currentState = newState;
-    }
-
     protected void HandleActionState()
     {
         actionTimer -= Time.deltaTime;
@@ -181,36 +191,38 @@ public abstract class BossAIBase : MonoBehaviour
 
     protected void EndCurrentAction()
     {
-        currentState = BossState.Chasing;
         agent.isStopped = false;
+        SetState(BossState.Chasing);
     }
 
     protected void StartSwordAttack()
     {
-        currentState = BossState.SwordAttack;
+        SetState(BossState.SwordAttack);
+
         swordTimer = swordCooldown;
         actionTimer = swordDuration;
-        agent.isStopped = true;
 
+        agent.isStopped = true;
         transform.LookAt(player);
-        SwordSlash();
     }
 
     protected void StartAreaAttack()
     {
-        currentState = BossState.AreaAttack;
+        SetState(BossState.AreaAttack);
+
         areaTimer = areaCooldown;
         actionTimer = areaDuration;
-        agent.isStopped = true;
 
-        AreaAttack();
+        agent.isStopped = true;
     }
 
     protected void StartAbility()
     {
-        currentState = BossState.Ability;
+        SetState(BossState.Ability);
+
         abilityTimer = abilityCooldown;
         actionTimer = abilityDuration;
+
         agent.isStopped = true;
 
         UseAbility();
@@ -218,9 +230,11 @@ public abstract class BossAIBase : MonoBehaviour
 
     protected void StartDashAttack()
     {
-        currentState = BossState.DashAttack;
+        SetState(BossState.DashAttack);
+
         dashTimer = dashCooldown;
         actionTimer = dashDuration;
+
         agent.isStopped = true;
 
         transform.LookAt(player);
@@ -228,8 +242,6 @@ public abstract class BossAIBase : MonoBehaviour
         dashDirection = transform.forward;
         dashTravelled = 0f;
         dashHitTargets.Clear();
-
-        Debug.Log($"{name} starts dash attack!");
     }
 
     protected void UpdateTimers()
@@ -246,6 +258,7 @@ public abstract class BossAIBase : MonoBehaviour
     void PerformDashMovement()
     {
         float step = dashSpeed * Time.deltaTime;
+
         transform.position += dashDirection * step;
         dashTravelled += step;
 
@@ -268,6 +281,16 @@ public abstract class BossAIBase : MonoBehaviour
 
         if (dashTravelled >= dashDistance)
             actionTimer = 0f;
+    }
+
+    public void Animation_SwordHit()
+    {
+        SwordSlash();
+    }
+
+    public void Animation_AreaHit()
+    {
+        AreaAttack();
     }
 
     protected virtual void SwordSlash()
@@ -304,11 +327,10 @@ public abstract class BossAIBase : MonoBehaviour
         isBoostActive = true;
 
         agent.speed = baseAgentSpeed * speedMultiplier;
+
         swordDamage = Mathf.RoundToInt(baseSwordDamage * damageMultiplier);
         areaDamage = Mathf.RoundToInt(baseAreaDamage * damageMultiplier);
         dashDamage = Mathf.RoundToInt(baseDashDamage * damageMultiplier);
-
-        Debug.Log($"{name} applied stat boost!");
     }
 
     protected virtual void EndStatBoost()
@@ -316,11 +338,30 @@ public abstract class BossAIBase : MonoBehaviour
         isBoostActive = false;
 
         agent.speed = baseAgentSpeed;
+
         swordDamage = baseSwordDamage;
         areaDamage = baseAreaDamage;
         dashDamage = baseDashDamage;
+    }
 
-        Debug.Log($"{name} stat boost ended!");
+    protected void HandleStatBoost()
+    {
+        if (!isBoostActive && statBoostTimer <= 0)
+        {
+            ApplyStatBoost();
+            actionTimer = statBoostDuration;
+        }
+
+        if (isBoostActive)
+        {
+            actionTimer -= Time.deltaTime;
+
+            if (actionTimer <= 0)
+            {
+                EndStatBoost();
+                statBoostTimer = statBoostCooldown;
+            }
+        }
     }
 
     protected abstract void UseAbility();
