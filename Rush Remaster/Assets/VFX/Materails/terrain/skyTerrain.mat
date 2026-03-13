@@ -83,25 +83,25 @@ Material:
     - _QueueOffset: 0
     - _earthMapPower: 1.04
     - _finalStep: 0.916
-    - _grassDensity: 45.71
-    - _grassLength1: 7
-    - _grassLength2: 5
+    - _grassDensity: 63.2
+    - _grassLength1: 25
+    - _grassLength2: 20
     - _grassMapPower: 3
-    - _grassPow: 278.2
+    - _grassPow: 281.11
     - _grassRot1: 17.8
     - _grassRot2: 2.9
-    - _noiseScaleEarth: 0.04
+    - _noiseScaleEarth: 0.34
     - _noiseScaleGrass: 7.62
     - _normalNoiseScale: 422
     - _normalNoiseStrength: 0.02
     - _normalOffset: 0
     - _pow: 0.8
-    - _shadowScale: 1
+    - _shadowScale: 28
     - _shadowSpeed: 1
     - _totalScale: 0.01
     m_Colors:
-    - _earthColor: {r: 0.4716981, g: 0.12596682, b: 0, a: 0}
-    - _grassColor: {r: 1, g: 1, b: 1, a: 0}
+    - _earthColor: {r: 0.49056602, g: 0.22652493, b: 0, a: 1}
+    - _grassColor: {r: 0.2234621, g: 0.6698113, b: 0.009478444, a: 0}
     - _noiseLimitEarth: {r: 0, g: 1, b: 0, a: 0}
     - _noisePosEarth: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _noisePosGrass: {r: 0.5, g: 0.5, b: 0, a: 0}
