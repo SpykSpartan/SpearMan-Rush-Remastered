@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraPanAroundObject : MonoBehaviour
+public class CinematicCam : MonoBehaviour
 {
     [Header("Target")]
     public Transform target;
