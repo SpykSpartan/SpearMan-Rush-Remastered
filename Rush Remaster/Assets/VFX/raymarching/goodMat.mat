@@ -55,18 +55,19 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Ra: 0
+    - _Rainbow: 0
     - _Rb: 0
-    - _colorPow: 1
-    - _densityScale: 0
-    - _distanceVal: 0
-    - _noiseDensity: 0
-    - _noiseScale: 10.1
+    - _colorPow: 57.57
+    - _densityScale: 0.92
+    - _distanceVal: 0.5
+    - _noiseDensity: 0.71
+    - _noiseScale: 2.93
     - _remove: 0
     - _stepNum: 256
     - _stepSize: 0.1
     m_Colors:
-    - _highlightColor: {r: 0, g: 0, b: 0, a: 0}
-    - _mainColor: {r: 0, g: 0, b: 0, a: 0}
-    - _sphere: {r: 0, g: 0, b: 0, a: 1}
+    - _highlightColor: {r: 1, g: 0.9990684, b: 0, a: 0}
+    - _mainColor: {r: 1, g: 0.010471204, b: 0, a: 0}
+    - _sphere: {r: 41.39, g: 27.19, b: 139.88, a: 1.8}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
