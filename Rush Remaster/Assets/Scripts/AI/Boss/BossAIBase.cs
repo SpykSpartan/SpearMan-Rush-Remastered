@@ -42,7 +42,6 @@ public abstract class BossAIBase : MonoBehaviour
     public float dashDistance = 6f;
     public float dashHitRadius = 1.5f;
     public float dashCooldown = 5f;
-    public float dashDuration = 0.6f;
 
     [Header("Cooldowns")]
     public float swordCooldown = 2f;
@@ -50,13 +49,8 @@ public abstract class BossAIBase : MonoBehaviour
     public float abilityCooldown = 10f;
     public float statBoostCooldown = 12f;
 
-    [Header("Action Durations")]
-    public float swordDuration = 1.2f;
-    public float areaDuration = 2f;
-    public float abilityDuration = 2.5f;
+    [Header("Stat Boost")]
     public float statBoostDuration = 5f;
-
-    [Header("Stat Boost Multipliers")]
     public float damageMultiplier = 1.5f;
     public float speedMultiplier = 1.4f;
 
@@ -65,9 +59,14 @@ public abstract class BossAIBase : MonoBehaviour
     protected float abilityTimer;
     protected float statBoostTimer;
     protected float dashTimer;
-    protected float actionTimer;
+    protected float dashDelayTimer = 0f;
+    protected bool dashStarted = false;
 
     protected bool isBoostActive = false;
+    protected bool isPerformingAction = false;
+
+    protected float actionFailSafeTimer = 3f;
+    protected float currentActionTime = 0f;
 
     protected float baseAgentSpeed;
     protected int baseSwordDamage;
@@ -79,7 +78,6 @@ public abstract class BossAIBase : MonoBehaviour
     Vector3 dashDirection;
     float dashTravelled;
     HashSet<Collider> dashHitTargets = new HashSet<Collider>();
-
 
     protected virtual void Awake()
     {
@@ -104,8 +102,7 @@ public abstract class BossAIBase : MonoBehaviour
         UpdateTimers();
         HandleStatBoost();
 
-        if (currentState != BossState.Idle &&
-            currentState != BossState.Chasing)
+        if (isPerformingAction)
         {
             HandleActionState();
             return;
@@ -117,6 +114,11 @@ public abstract class BossAIBase : MonoBehaviour
     void UpdateAnimator()
     {
         if (!animator) return;
+
+        animator.ResetTrigger("WeaponAttack");
+        animator.ResetTrigger("AreaAttack");
+        animator.ResetTrigger("ChargingPart1");
+        animator.ResetTrigger("EnrageAbility");
 
         animator.SetBool("BasicMovement", currentState == BossState.Chasing);
 
@@ -180,18 +182,22 @@ public abstract class BossAIBase : MonoBehaviour
 
     protected void HandleActionState()
     {
-        actionTimer -= Time.deltaTime;
+        currentActionTime += Time.deltaTime;
 
         if (currentState == BossState.DashAttack)
             PerformDashMovement();
 
-        if (actionTimer <= 0)
-            EndCurrentAction();
+        if (currentActionTime >= actionFailSafeTimer)
+        {
+            Debug.LogWarning("Action fail-safe triggered!");
+            Animation_ActionComplete();
+        }
     }
 
     protected void EndCurrentAction()
     {
         agent.isStopped = false;
+        isPerformingAction = false;
         SetState(BossState.Chasing);
     }
 
@@ -200,10 +206,11 @@ public abstract class BossAIBase : MonoBehaviour
         SetState(BossState.SwordAttack);
 
         swordTimer = swordCooldown;
-        actionTimer = swordDuration;
-
         agent.isStopped = true;
         transform.LookAt(player);
+
+        isPerformingAction = true;
+        currentActionTime = 0f;
     }
 
     protected void StartAreaAttack()
@@ -211,9 +218,10 @@ public abstract class BossAIBase : MonoBehaviour
         SetState(BossState.AreaAttack);
 
         areaTimer = areaCooldown;
-        actionTimer = areaDuration;
-
         agent.isStopped = true;
+
+        isPerformingAction = true;
+        currentActionTime = 0f;
     }
 
     protected void StartAbility()
@@ -221,11 +229,12 @@ public abstract class BossAIBase : MonoBehaviour
         SetState(BossState.Ability);
 
         abilityTimer = abilityCooldown;
-        actionTimer = abilityDuration;
-
         agent.isStopped = true;
 
         UseAbility();
+
+        isPerformingAction = true;
+        currentActionTime = 0f;
     }
 
     protected void StartDashAttack()
@@ -233,8 +242,6 @@ public abstract class BossAIBase : MonoBehaviour
         SetState(BossState.DashAttack);
 
         dashTimer = dashCooldown;
-        actionTimer = dashDuration;
-
         agent.isStopped = true;
 
         transform.LookAt(player);
@@ -242,6 +249,9 @@ public abstract class BossAIBase : MonoBehaviour
         dashDirection = transform.forward;
         dashTravelled = 0f;
         dashHitTargets.Clear();
+
+        isPerformingAction = true;
+        currentActionTime = 0f;
     }
 
     protected void UpdateTimers()
@@ -255,18 +265,24 @@ public abstract class BossAIBase : MonoBehaviour
             statBoostTimer -= Time.deltaTime;
     }
 
-    void PerformDashMovement()
+    protected void PerformDashMovement()
     {
+        dashDelayTimer += Time.deltaTime;
+
+        if (!dashStarted)
+        {
+            if (dashDelayTimer < 0.3f) return;
+
+            dashStarted = true;
+            dashDelayTimer = 0f;
+        }
+
         float step = dashSpeed * Time.deltaTime;
 
         transform.position += dashDirection * step;
         dashTravelled += step;
 
-        Collider[] hits = Physics.OverlapSphere(
-            transform.position,
-            dashHitRadius,
-            playerLayer
-        );
+        Collider[] hits = Physics.OverlapSphere(transform.position, dashHitRadius, playerLayer);
 
         foreach (Collider hit in hits)
         {
@@ -280,7 +296,17 @@ public abstract class BossAIBase : MonoBehaviour
         }
 
         if (dashTravelled >= dashDistance)
-            actionTimer = 0f;
+        {
+            Animation_ActionComplete();
+
+            dashStarted = false;
+            dashDelayTimer = 0f;
+        }
+    }
+
+    public void Animation_ActionComplete()
+    {
+        EndCurrentAction();
     }
 
     public void Animation_SwordHit()
@@ -349,33 +375,9 @@ public abstract class BossAIBase : MonoBehaviour
         if (!isBoostActive && statBoostTimer <= 0)
         {
             ApplyStatBoost();
-            actionTimer = statBoostDuration;
-        }
-
-        if (isBoostActive)
-        {
-            actionTimer -= Time.deltaTime;
-
-            if (actionTimer <= 0)
-            {
-                EndStatBoost();
-                statBoostTimer = statBoostCooldown;
-            }
+            statBoostTimer = statBoostCooldown;
         }
     }
 
     protected abstract void UseAbility();
-
-    protected virtual void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Vector3 center = transform.position + transform.forward * swordRange;
-        Gizmos.DrawWireCube(center, swordBoxSize);
-
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, areaRadius);
-
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, dashHitRadius);
-    }
 }

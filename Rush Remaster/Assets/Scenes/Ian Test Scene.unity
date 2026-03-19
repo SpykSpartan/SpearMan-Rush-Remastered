@@ -168,14 +168,10 @@ MonoBehaviour:
   dashDistance: 6
   dashHitRadius: 1.5
   dashCooldown: 5
-  dashDuration: 0.6
   swordCooldown: 2
   areaCooldown: 6
   abilityCooldown: 10
   statBoostCooldown: 12
-  swordDuration: 1.2
-  areaDuration: 2
-  abilityDuration: 2.5
   statBoostDuration: 5
   damageMultiplier: 1.5
   speedMultiplier: 1.4
@@ -205,6 +201,9 @@ MonoBehaviour:
   hitVFXDuration: 0.25
   healVFXDuration: 0.25
   vfxSpawnPoint: {fileID: 0}
+  enableLowHealthPostFX: 1
+  lowHealthThreshold: 25
+  postProcessController: {fileID: 0}
 --- !u!195 &155833921
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -622,6 +621,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5990905482790148967, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
+      propertyPath: slashBoxSize.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990905482790148967, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
+      propertyPath: slashBoxSize.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990905482790148967, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
+      propertyPath: slashBoxSize.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990905482790148967, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
+      propertyPath: enemyLayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6704829616085398470, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
       propertyPath: m_Name
       value: Spearman
@@ -631,7 +646,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1948213138}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2919674435969889151, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
@@ -661,7 +677,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1640569519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -689,14 +705,10 @@ MonoBehaviour:
   dashDistance: 6
   dashHitRadius: 1.5
   dashCooldown: 5
-  dashDuration: 0.6
   swordCooldown: 2
   areaCooldown: 6
   abilityCooldown: 10
   statBoostCooldown: 12
-  swordDuration: 1.2
-  areaDuration: 2
-  abilityDuration: 2.5
   statBoostDuration: 5
   damageMultiplier: 1.25
   speedMultiplier: 1.1
@@ -726,6 +738,9 @@ MonoBehaviour:
   hitVFXDuration: 0.25
   healVFXDuration: 0.25
   vfxSpawnPoint: {fileID: 0}
+  enableLowHealthPostFX: 1
+  lowHealthThreshold: 25
+  postProcessController: {fileID: 0}
 --- !u!195 &1640569521
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -998,6 +1013,71 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1001 &8406886451857374433
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2576248685102169002, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 506.3069
+      objectReference: {fileID: 0}
+    - target: {fileID: 2576248685102169002, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2576248685102169002, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -199.78674
+      objectReference: {fileID: 0}
+    - target: {fileID: 2576248685102169002, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2576248685102169002, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2576248685102169002, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2576248685102169002, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2576248685102169002, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2576248685102169002, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2576248685102169002, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342986094257908152, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
+      propertyPath: m_Name
+      value: Asian Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342986094257908152, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720962779663770608, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1007,4 +1087,5 @@ SceneRoots:
   - {fileID: 238309485}
   - {fileID: 155833925}
   - {fileID: 1640569525}
+  - {fileID: 8406886451857374433}
   - {fileID: 1082978641}
