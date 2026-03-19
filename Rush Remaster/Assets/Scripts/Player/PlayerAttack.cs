@@ -10,6 +10,7 @@ public class PlayerAttack : MonoBehaviour
 
     [Header("Stab Attack")]
     [SerializeField] private float stabRange = 1.25f;
+    [SerializeField] private Vector3 stabBoxSize = new Vector3(1f, 1.2f, 1.5f);
     public LayerMask enemyLayer;
     public Vector3 rayOffset = new Vector3(0f, 1f, 0.5f);
     [SerializeField] private int stabDamage = 12;
@@ -23,16 +24,17 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float parryTime = 0.2f;
 
     [Header("Cooldowns")]
-    public float stabCooldown = 0.5f;
-    public float slashCooldown = 0.6f;
-
-    private bool attackLocked = false;
+    public float stabCooldown = 0.2f;
+    public float slashCooldown = 0.25f;
 
     [Header("References")]
     [SerializeField] private PlayerMovement movement;
     [SerializeField] private PlayerStat statSystem;
     [SerializeField] private Animator animator;
     [SerializeField] private PlayerAttackAudioManager attackSFX;
+
+    private float lastStabTime;
+    private float lastSlashTime;
 
     void Update()
     {
@@ -41,16 +43,16 @@ public class PlayerAttack : MonoBehaviour
 
     void HandleCombatInput()
     {
-        if (Input.GetMouseButtonDown(0) && !attackLocked)
+        if (Input.GetMouseButton(0) && Time.time >= lastStabTime + stabCooldown)
         {
-            Debug.Log("Stab Attack triggered");
             StartCoroutine(PerformStab());
+            lastStabTime = Time.time;
         }
 
-        if (Input.GetMouseButtonDown(1) && !attackLocked)
+        if (Input.GetMouseButton(1) && Time.time >= lastSlashTime + slashCooldown)
         {
-            Debug.Log("Slash Attack triggered");
             StartCoroutine(PerformSlashAttack());
+            lastSlashTime = Time.time;
         }
 
         if (Input.GetKeyDown(abilityKey))
@@ -60,73 +62,66 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetKeyDown(parryKey))
         {
-            Debug.Log("Parry attempt");
             PerformParry();
         }
     }
 
     private IEnumerator PerformStab()
     {
-        attackLocked = true;
-        movement.canMove = false;
-
         animator.SetTrigger("ForwardSpearThrust");
 
         yield return new WaitForSeconds(0.1f);
 
+        bool didHit = PerformStabBox();
+
+        if (didHit) attackSFX.PlayAttack();
+        else attackSFX.PlayMiss();
+    }
+
+    private bool PerformStabBox()
+    {
         bool didHit = false;
 
-        Vector3 origin = transform.position
-                        + Camera.main.transform.forward * rayOffset.z
-                        + Vector3.up * 1f
-                        + transform.right * rayOffset.x;
+        Vector3 forward = transform.forward;
+        forward.y = 0f;
+        forward.Normalize();
 
-        Vector3 direction = Camera.main.transform.forward;
-        direction.y = 0f;
-        direction.Normalize();
+        Vector3 center = transform.position 
+                        + forward * stabRange 
+                        + Vector3.up * rayOffset.y;
 
-        if (Physics.Raycast(origin, direction, out RaycastHit hit, stabRange, enemyLayer))
+        Collider[] hits = Physics.OverlapBox(
+            center,
+            stabBoxSize * 0.5f,
+            Quaternion.LookRotation(forward),
+            enemyLayer
+        );
+
+        foreach (Collider hit in hits)
         {
-            IDamageable damageable = hit.collider.GetComponent<IDamageable>();
-            if (damageable != null)
+            if (hit.TryGetComponent<IDamageable>(out var damageable))
             {
                 float modDamage = Mathf.Round(stabDamage * statSystem.damageMultiplier);
                 damageable.TakeDamage((int)modDamage);
+
                 statSystem.RegisterDamageAction();
                 didHit = true;
             }
         }
 
-        if (didHit) attackSFX.PlayAttack();
-        else attackSFX.PlayMiss();
-
-        yield return new WaitForSeconds(0.3f);
-
-        movement.canMove = true;
-
-        yield return new WaitForSeconds(stabCooldown);
-        attackLocked = false;
+        return didHit;
     }
 
     private IEnumerator PerformSlashAttack()
     {
-        attackLocked = true;
-        movement.canMove = false;
-
         animator.SetTrigger("OverheadSpearSlash");
-        yield return new WaitForSeconds(0.25f);
+
+        yield return new WaitForSeconds(0.2f);
 
         bool didHit = PerformSlash();
 
         if (didHit) attackSFX.PlayAttack();
         else attackSFX.PlayMiss();
-
-        yield return new WaitForSeconds(0.3f);
-
-        movement.canMove = true;
-
-        yield return new WaitForSeconds(slashCooldown);
-        attackLocked = false;
     }
 
     private bool PerformSlash()
@@ -161,18 +156,6 @@ public class PlayerAttack : MonoBehaviour
         return didHit;
     }
 
-    public void PlayMissSFX()
-    {
-        if (attackSFX != null)
-            attackSFX.PlayMiss();
-    }
-
-    public void PlayAttackSFX()
-    {
-        if (attackSFX != null)
-            attackSFX.PlayAttack();
-    }
-
     private void PerformParry()
     {
         animator.SetTrigger("Parry");
@@ -197,15 +180,18 @@ public class PlayerAttack : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.blue;
-
         Vector3 forward = transform.forward;
         forward.y = 0f;
         forward.Normalize();
 
-        Vector3 center = transform.position + forward * slashRange;
-
-        Gizmos.matrix = Matrix4x4.TRS(center, Quaternion.LookRotation(forward), Vector3.one);
+        Gizmos.color = Color.blue;
+        Vector3 slashCenter = transform.position + forward * slashRange;
+        Gizmos.matrix = Matrix4x4.TRS(slashCenter, Quaternion.LookRotation(forward), Vector3.one);
         Gizmos.DrawWireCube(Vector3.zero, slashBoxSize);
+
+        Gizmos.color = Color.red;
+        Vector3 stabCenter = transform.position + forward * stabRange + Vector3.up * rayOffset.y;
+        Gizmos.matrix = Matrix4x4.TRS(stabCenter, Quaternion.LookRotation(forward), Vector3.one);
+        Gizmos.DrawWireCube(Vector3.zero, stabBoxSize);
     }
 }

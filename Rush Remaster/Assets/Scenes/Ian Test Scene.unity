@@ -622,8 +622,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5990905482790148967, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
-      propertyPath: slashBoxSize.x
+      propertyPath: stabRange
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990905482790148967, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
+      propertyPath: slashRange
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990905482790148967, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
+      propertyPath: stabBoxSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990905482790148967, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
+      propertyPath: stabBoxSize.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990905482790148967, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
+      propertyPath: stabBoxSize.z
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5990905482790148967, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
+      propertyPath: slashBoxSize.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5990905482790148967, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
       propertyPath: slashBoxSize.y
@@ -631,7 +651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5990905482790148967, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
       propertyPath: slashBoxSize.z
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5990905482790148967, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
       propertyPath: enemyLayer.m_Bits
@@ -1068,6 +1088,10 @@ PrefabInstance:
     - target: {fileID: 3342986094257908152, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3533555221143175648, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
+      propertyPath: m_Radius
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 8720962779663770608, guid: dd817a4f38fae2f4ebc78a2075b76b85, type: 3}
       propertyPath: m_Enabled
