@@ -8,21 +8,27 @@ public class PlayerAttack : MonoBehaviour
     public KeyCode abilityKey = KeyCode.E;
     public KeyCode parryKey = KeyCode.Q;
 
-    [Header("Attack Settings")]
+    [Header("Stab Attack")]
     [SerializeField] private float stabRange = 1.25f;
     public LayerMask enemyLayer;
     public Vector3 rayOffset = new Vector3(0f, 1f, 0.5f);
     [SerializeField] private int stabDamage = 12;
+
+    [Header("Slash Attack")]
+    [SerializeField] private float slashRange = 1.5f;
+    [SerializeField] private Vector3 slashBoxSize = new Vector3(2f, 1.5f, 2f);
+    [SerializeField] private int slashDamage = 18;
+
+    [Header("Parry Settings")]
     [SerializeField] private float parryTime = 0.2f;
 
     [Header("Cooldowns")]
     public float stabCooldown = 0.5f;
-    public float bashCooldown = 0.6f;
+    public float slashCooldown = 0.6f;
 
     private bool attackLocked = false;
 
     [Header("References")]
-    public PlayerHitbox meleeHitbox;
     [SerializeField] private PlayerMovement movement;
     [SerializeField] private PlayerStat statSystem;
     [SerializeField] private Animator animator;
@@ -43,8 +49,8 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1) && !attackLocked)
         {
-            Debug.Log("Bash Attack triggered");
-            StartCoroutine(PerformBash());
+            Debug.Log("Slash Attack triggered");
+            StartCoroutine(PerformSlashAttack());
         }
 
         if (Input.GetKeyDown(abilityKey))
@@ -63,6 +69,7 @@ public class PlayerAttack : MonoBehaviour
     {
         attackLocked = true;
         movement.canMove = false;
+
         animator.SetTrigger("ForwardSpearThrust");
 
         yield return new WaitForSeconds(0.1f);
@@ -101,25 +108,57 @@ public class PlayerAttack : MonoBehaviour
         attackLocked = false;
     }
 
-    private IEnumerator PerformBash()
+    private IEnumerator PerformSlashAttack()
     {
         attackLocked = true;
         movement.canMove = false;
+
         animator.SetTrigger("OverheadSpearSlash");
+        yield return new WaitForSeconds(0.25f);
 
-        meleeHitbox.ActivateHitbox();
+        bool didHit = PerformSlash();
 
-        yield return new WaitForSeconds(0.4f);
-
-        meleeHitbox.DeactivateHitbox();
-
-        if (meleeHitbox.didHit) attackSFX.PlayAttack();
+        if (didHit) attackSFX.PlayAttack();
         else attackSFX.PlayMiss();
+
+        yield return new WaitForSeconds(0.3f);
 
         movement.canMove = true;
 
-        yield return new WaitForSeconds(bashCooldown);
+        yield return new WaitForSeconds(slashCooldown);
         attackLocked = false;
+    }
+
+    private bool PerformSlash()
+    {
+        bool didHit = false;
+
+        Vector3 forward = transform.forward;
+        forward.y = 0f;
+        forward.Normalize();
+
+        Vector3 center = transform.position + forward * slashRange;
+
+        Collider[] hits = Physics.OverlapBox(
+            center,
+            slashBoxSize * 0.5f,
+            Quaternion.LookRotation(forward),
+            enemyLayer
+        );
+
+        foreach (Collider hit in hits)
+        {
+            if (hit.TryGetComponent<IDamageable>(out var damageable))
+            {
+                float modDamage = Mathf.Round(slashDamage * statSystem.damageMultiplier);
+                damageable.TakeDamage((int)modDamage);
+
+                statSystem.RegisterDamageAction();
+                didHit = true;
+            }
+        }
+
+        return didHit;
     }
 
     public void PlayMissSFX()
@@ -144,14 +183,29 @@ public class PlayerAttack : MonoBehaviour
     private IEnumerator ParryInvulnerability()
     {
         yield return new WaitForSeconds(1f);
+
         healthSystem health = GetComponent<healthSystem>();
         if (health != null)
         {
             health.isInvulnerable = true;
-            Debug.Log("Parry: Player is temporarily invulnerable");
+
             yield return new WaitForSeconds(parryTime + statSystem.timeIncreaseMultiplier);
+
             health.isInvulnerable = false;
-            Debug.Log("Parry: Invulnerability ended");
         }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.blue;
+
+        Vector3 forward = transform.forward;
+        forward.y = 0f;
+        forward.Normalize();
+
+        Vector3 center = transform.position + forward * slashRange;
+
+        Gizmos.matrix = Matrix4x4.TRS(center, Quaternion.LookRotation(forward), Vector3.one);
+        Gizmos.DrawWireCube(Vector3.zero, slashBoxSize);
     }
 }
