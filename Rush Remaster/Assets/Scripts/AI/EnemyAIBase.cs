@@ -9,6 +9,10 @@ public abstract class EnemyAIBase : MonoBehaviour
     public enum AIState { Patrol, Chase, Attack, Idle }
     protected AIState currentState;
 
+    [Header("References")]
+    protected NavMeshAgent agent;
+    protected healthSystem health;
+
     [Header("General Settings")]
     public Transform[] patrolPoints;
     public float chaseRange = 10f;
@@ -28,7 +32,6 @@ public abstract class EnemyAIBase : MonoBehaviour
     public float dodgeDistance = 3f;
     public float dodgeDuration = 0.3f;
 
-    protected NavMeshAgent agent;
     protected int patrolIndex;
 
     protected bool canTransition = false;
@@ -45,10 +48,11 @@ public abstract class EnemyAIBase : MonoBehaviour
     protected Vector3 formationOffset = Vector3.zero;
     protected bool holdPosition = false;
 
-
     protected virtual void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        health = GetComponent<healthSystem>();
+
         agent.stoppingDistance = attackRange - stopDistanceBuffer;
         currentState = AIState.Idle;
         nextDodgeInterval = Random.Range(2f, 5f);
@@ -62,18 +66,20 @@ public abstract class EnemyAIBase : MonoBehaviour
         {
             GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
             if (playerObj != null)
-            {
                 player = playerObj.transform;
-            }
             else
-            {
                 Debug.LogWarning($"{gameObject.name} could not find player with tag 'Player'.");
-            }
         }
     }
 
     protected virtual void Update()
     {
+        if (health != null && health.IsDead)
+        {
+            HandleDeathState();
+            return;
+        }
+
         if (holdPosition) return;
 
         TryDodge();
@@ -99,8 +105,22 @@ public abstract class EnemyAIBase : MonoBehaviour
         CheckTransitions();
     }
 
+    protected void HandleDeathState()
+    {
+        if (agent != null)
+        {
+            agent.isStopped = true;
+            agent.ResetPath();
+        }
+
+        isDodging = false;
+        behaviorEnabled = false;
+        canTransition = false;
+    }
+
     protected virtual void TryDodge()
     {
+        if (health != null && health.IsDead) return;
         if (isDodging || !behaviorEnabled) return;
 
         if (Time.time - lastDodgeTime >= nextDodgeInterval)
@@ -125,6 +145,9 @@ public abstract class EnemyAIBase : MonoBehaviour
 
         while (elapsed < dodgeDuration)
         {
+            if (health != null && health.IsDead)
+                yield break;
+
             float step = (elapsed / dodgeDuration);
             transform.position = Vector3.Lerp(startPosition, targetPosition, step);
             elapsed += Time.deltaTime;
@@ -152,7 +175,6 @@ public abstract class EnemyAIBase : MonoBehaviour
         agent.ResetPath();
     }
 
-
     public void EnableTransitions(bool value)
     {
         canTransition = value;
@@ -167,6 +189,7 @@ public abstract class EnemyAIBase : MonoBehaviour
 
     protected virtual void Chase()
     {
+        if (health != null && health.IsDead) return;
         if (player == null || holdPosition) return;
 
         Vector3 targetPosition = player.position + formationOffset;
@@ -178,6 +201,7 @@ public abstract class EnemyAIBase : MonoBehaviour
 
     protected virtual void CheckTransitions()
     {
+        if (health != null && health.IsDead) return;
         if (player == null || !canTransition) return;
         if (holdPosition) return;
 

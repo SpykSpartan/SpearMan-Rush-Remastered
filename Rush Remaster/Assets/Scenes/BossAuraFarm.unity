@@ -4150,12 +4150,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 7096239373947737533}
   startKey: 114
-  distance: 5
   rotationSpeed: 20
-  rotations: 2
+  numberOfRotations: 2
   verticalSpeed: 0.05
   stopPoint: {fileID: 1232343854}
-  moveToStopSpeed: 2
 --- !u!1 &647106145
 GameObject:
   m_ObjectHideFlags: 0
@@ -18953,11 +18951,11 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1648117261994578747, guid: 0520c654da7aef941abf892d2e32963e, type: 3}
-  - {fileID: 6722414554474692651, guid: 0520c654da7aef941abf892d2e32963e, type: 3}
-  - {fileID: -8455333907799053192, guid: 0520c654da7aef941abf892d2e32963e, type: 3}
-  - {fileID: 6823896408436374804, guid: 0520c654da7aef941abf892d2e32963e, type: 3}
-  - {fileID: -6194378820814188793, guid: 0520c654da7aef941abf892d2e32963e, type: 3}
+  - {fileID: 2100000, guid: 17ae8342a462c7d4b9ae28378d244ba5, type: 2}
+  - {fileID: 2100000, guid: bddf7d146c5322a4faa549d4eb166c7b, type: 2}
+  - {fileID: 2100000, guid: 296bdfb691b887b49bee3413e75de62b, type: 2}
+  - {fileID: 2100000, guid: a4ec94b215375ed4e8c5ea85f10a88c8, type: 2}
+  - {fileID: 2100000, guid: 1688603e660965d47aab75dae7de10a7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21327,7 +21325,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 86b4a898ad22b444099a61089e5b847d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

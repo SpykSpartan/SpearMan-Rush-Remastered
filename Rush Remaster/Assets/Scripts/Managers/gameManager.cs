@@ -14,10 +14,11 @@ public class gameManager : MonoBehaviour
     public RespawnManager RespawnManger;
     public GameObject DeathUI;
     public GameObject WinUI;
+    public GameObject popupUI;
     private bool isPaused = false;
 
     [Header("Boss Settings")]
-    private int totalBossCount = 3;
+    private int totalBossCount = 1;
     private int bossesDefeated = 0;
 
     public GameObject pauseMenuUI;
@@ -80,6 +81,11 @@ public class gameManager : MonoBehaviour
         {
             WinGame();
         }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
     public void WinGame()
@@ -175,9 +181,53 @@ public class gameManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void GoToBoss()
+    {
+        if (zoneManager.Instance != null)
+            Destroy(zoneManager.Instance.gameObject);
+
+        Destroy(this.gameObject);
+
+        SceneManager.LoadScene("SampleScene");
+    }
+
     private void LockCursor(bool shouldLock)
     {
         Cursor.visible = !shouldLock;
         Cursor.lockState = shouldLock ? CursorLockMode.Locked : CursorLockMode.None;
+    }
+
+    public void TriggerPopup(GameObject customUI = null)
+    {
+        Time.timeScale = 0f;
+        isPaused = true;
+
+        if (customUI != null)
+        {
+            customUI.SetActive(true);
+        }
+        else if (popupUI != null)
+        {
+            popupUI.SetActive(true);
+        }
+
+        LockCursor(false);
+    }
+
+    public void ClosePopup(GameObject customUI = null)
+    {
+        Time.timeScale = 1f;
+        isPaused = false;
+
+        if (customUI != null)
+        {
+            customUI.SetActive(false);
+        }
+        else if (popupUI != null)
+        {
+            popupUI.SetActive(false);
+        }
+
+        LockCursor(true);
     }
 }

@@ -19,6 +19,7 @@ public abstract class BossAIBase : MonoBehaviour
     protected NavMeshAgent agent;
     protected Transform player;
     protected Animator animator;
+    protected healthSystem health;
 
     [Header("Detection")]
     public float detectionRange = 20f;
@@ -87,6 +88,7 @@ public abstract class BossAIBase : MonoBehaviour
 
     protected virtual void Start()
     {
+        health = GetComponent<healthSystem>();
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
 
         baseAgentSpeed = agent.speed;
@@ -97,6 +99,12 @@ public abstract class BossAIBase : MonoBehaviour
 
     protected virtual void Update()
     {
+        if (health != null && health.IsDead)
+        {
+            HandleDeathState();
+            return;
+        }
+
         if (!player) return;
 
         UpdateTimers();
@@ -109,6 +117,17 @@ public abstract class BossAIBase : MonoBehaviour
         }
 
         HandleMovementAndDecisions();
+    }
+
+    protected void HandleDeathState()
+    {
+        if (agent != null && !agent.isStopped)
+            agent.isStopped = true;
+
+        isPerformingAction = false;
+
+        if (animator != null)
+            animator.SetBool("BasicMovement", false);
     }
 
     void UpdateAnimator()
@@ -203,6 +222,8 @@ public abstract class BossAIBase : MonoBehaviour
 
     protected void StartSwordAttack()
     {
+        if (health != null && health.IsDead) return;
+
         SetState(BossState.SwordAttack);
 
         swordTimer = swordCooldown;
@@ -215,6 +236,8 @@ public abstract class BossAIBase : MonoBehaviour
 
     protected void StartAreaAttack()
     {
+        if (health != null && health.IsDead) return;
+
         SetState(BossState.AreaAttack);
 
         areaTimer = areaCooldown;
@@ -226,6 +249,8 @@ public abstract class BossAIBase : MonoBehaviour
 
     protected void StartAbility()
     {
+        if (health != null && health.IsDead) return;
+
         SetState(BossState.Ability);
 
         abilityTimer = abilityCooldown;
@@ -239,6 +264,8 @@ public abstract class BossAIBase : MonoBehaviour
 
     protected void StartDashAttack()
     {
+        if (health != null && health.IsDead) return;
+
         SetState(BossState.DashAttack);
 
         dashTimer = dashCooldown;
@@ -265,16 +292,9 @@ public abstract class BossAIBase : MonoBehaviour
             statBoostTimer -= Time.deltaTime;
     }
 
-    IEnumerator DelayRealTime(float seconds)
-    {
-        yield return new WaitForSecondsRealtime(seconds);
-    }
-
     protected void PerformDashMovement()
     {
         dashDelayTimer += Time.deltaTime;
-
-        StartCoroutine(DelayRealTime(2f));
 
         if (!dashStarted)
         {
@@ -309,8 +329,6 @@ public abstract class BossAIBase : MonoBehaviour
             dashStarted = false;
             dashDelayTimer = 0f;
         }
-
-        StartCoroutine(DelayRealTime(2f));
     }
 
     public void Animation_ActionComplete()
@@ -330,6 +348,8 @@ public abstract class BossAIBase : MonoBehaviour
 
     protected virtual void SwordSlash()
     {
+        if (health != null && health.IsDead) return;
+
         Vector3 center = transform.position + transform.forward * swordRange;
 
         Collider[] hits = Physics.OverlapBox(
@@ -346,6 +366,8 @@ public abstract class BossAIBase : MonoBehaviour
 
     protected virtual void AreaAttack()
     {
+        if (health != null && health.IsDead) return;
+
         Collider[] hits = Physics.OverlapSphere(
             transform.position,
             areaRadius,
@@ -393,7 +415,6 @@ public abstract class BossAIBase : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-
         Gizmos.DrawWireSphere(transform.position, detectionRange);
 
         Gizmos.color = Color.red;
