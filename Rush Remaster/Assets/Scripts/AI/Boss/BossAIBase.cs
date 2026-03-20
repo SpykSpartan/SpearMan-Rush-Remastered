@@ -265,9 +265,16 @@ public abstract class BossAIBase : MonoBehaviour
             statBoostTimer -= Time.deltaTime;
     }
 
+    IEnumerator DelayRealTime(float seconds)
+    {
+        yield return new WaitForSecondsRealtime(seconds);
+    }
+
     protected void PerformDashMovement()
     {
         dashDelayTimer += Time.deltaTime;
+
+        StartCoroutine(DelayRealTime(2f));
 
         if (!dashStarted)
         {
@@ -302,6 +309,8 @@ public abstract class BossAIBase : MonoBehaviour
             dashStarted = false;
             dashDelayTimer = 0f;
         }
+
+        StartCoroutine(DelayRealTime(2f));
     }
 
     public void Animation_ActionComplete()
