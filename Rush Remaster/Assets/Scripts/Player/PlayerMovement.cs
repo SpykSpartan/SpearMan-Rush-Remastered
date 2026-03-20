@@ -32,8 +32,7 @@ public class PlayerMovement : MonoBehaviour, IMovementDetector
     [Header("Dodge Settings")]
     public float dodgeSpeed = 12f;
     public float dodgeDuration = 0.2f;
-
-    [HideInInspector] 
+ 
     public CharacterController controller;
 
     private Vector3 velocity;

@@ -55,7 +55,7 @@ MonoBehaviour:
   m_DecalLayerMask: 1
   m_ScaleMode: 0
   m_Offset: {x: 0, y: 0, z: 5}
-  m_Size: {x: 10, y: 10, z: 10}
+  m_Size: {x: 1, y: 1, z: 10}
   m_FadeFactor: 1
 --- !u!114 &4893421712853824192
 MonoBehaviour:
@@ -69,6 +69,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1627f727bb15ea14189eedc967e9e1c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 12.5
+  size: 1
   fadeSpeed: 5
   delay: 2
