@@ -18,7 +18,7 @@ public class gameManager : MonoBehaviour
     private bool isPaused = false;
 
     [Header("Boss Settings")]
-    private int totalBossCount = 3;
+    private int totalBossCount = 1;
     private int bossesDefeated = 0;
 
     public GameObject pauseMenuUI;
@@ -81,6 +81,11 @@ public class gameManager : MonoBehaviour
         {
             WinGame();
         }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
     public void WinGame()

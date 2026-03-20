@@ -8,6 +8,10 @@ public class healthSystem : MonoBehaviour, IDamageable
     [SerializeField] private int currentHealth;
     public int maxHealth { get; private set; }
 
+    [Header("Boss Settings")]
+    public bool isBoss = false;
+    public string bossID;
+
     public bool IsDead => isDead;
     private bool isDead = false;
 
@@ -238,6 +242,18 @@ public class healthSystem : MonoBehaviour, IDamageable
 
         Debug.Log($"{gameObject.name} has died.");
         OnDeath?.Invoke();
+
+        if (isBoss && !string.IsNullOrEmpty(bossID))
+        {
+            if (gameManager.Instance != null)
+            {
+                gameManager.Instance.ReportBossDefeated(bossID);
+            }
+            else
+            {
+                Debug.LogWarning("GameManager instance not found!");
+            }
+        }
 
         StopHealing("Entity died");
 
