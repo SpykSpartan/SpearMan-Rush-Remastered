@@ -188,7 +188,7 @@ public class gameManager : MonoBehaviour
 
         Destroy(this.gameObject);
 
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("AsianBoss");
     }
 
     private void LockCursor(bool shouldLock)
