@@ -274,7 +274,7 @@ public abstract class BossAIBase : MonoBehaviour
     {
         dashDelayTimer += Time.deltaTime;
 
-        StartCoroutine(DelayRealTime(2f));
+        StartCoroutine(DelayRealTime(10f));
 
         if (!dashStarted)
         {
@@ -310,7 +310,7 @@ public abstract class BossAIBase : MonoBehaviour
             dashDelayTimer = 0f;
         }
 
-        StartCoroutine(DelayRealTime(2f));
+        StartCoroutine(DelayRealTime(5f));
     }
 
     public void Animation_ActionComplete()

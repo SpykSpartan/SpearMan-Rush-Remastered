@@ -31,6 +31,7 @@ public class healthSystem : MonoBehaviour, IDamageable
     public int regenAmount = 3;
 
     private Coroutine regenCoroutine;
+    private bool isHealing = false;
 
     [Header("Hit VFX Settings")]
     public GameObject hitVFXObject;
@@ -105,8 +106,8 @@ public class healthSystem : MonoBehaviour, IDamageable
 
         if (currentHealth <= 0)
             Die();
-        else if (regenCoroutine != null)
-            StopRegen("Took damage, regen cancelled.");
+        else
+            StopHealing("Took damage");
     }
 
     private void SpawnHitVFX()
@@ -139,29 +140,8 @@ public class healthSystem : MonoBehaviour, IDamageable
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
         CheckLowHealthPostFX();
 
-        SpawnHealVFX();
-    }
-
-    private void SpawnHealVFX()
-    {
-        if (healVFX == null) return;
-
-        ParticleSystem ps = healVFX.GetComponent<ParticleSystem>();
-        healVFX.SetActive(true);
-
-        if (ps != null)
-        {
-            ps.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
-            ps.Play();
-        }
-
-        StartCoroutine(DisableHealVFX(healVFXDuration));
-    }
-
-    private IEnumerator DisableHealVFX(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        healVFX.SetActive(false);
+        if (currentHealth >= maxHealth)
+            StopHealing("Reached max health");
     }
 
     public void ForceSetHealth(int amount)
@@ -176,29 +156,69 @@ public class healthSystem : MonoBehaviour, IDamageable
         if (!enableRegen || IsDead || currentHealth >= maxHealth) return;
 
         if (regenCoroutine == null)
+        {
+            isHealing = true;
+            EnableHealVFX(true);
             regenCoroutine = StartCoroutine(RegenerateHealth());
+        }
     }
 
     private IEnumerator RegenerateHealth()
     {
         yield return new WaitForSeconds(regenDelay);
 
-        while (!IsDead && currentHealth < maxHealth)
+        while (!IsDead && currentHealth < maxHealth && isHealing)
         {
             Heal(regenAmount);
+
+            if (playerMovement != null && playerMovement.IsMoving())
+            {
+                StopHealing("Player moved");
+                yield break;
+            }
+
+            if (aiAgent != null && aiAgent.velocity.magnitude > 0.1f)
+            {
+                StopHealing("AI moved");
+                yield break;
+            }
+
             yield return new WaitForSeconds(regenInterval);
         }
 
-        regenCoroutine = null;
+        StopHealing("Regen finished");
     }
 
-    private void StopRegen(string reason = "")
+    private void StopHealing(string reason = "")
     {
         if (regenCoroutine != null)
         {
             StopCoroutine(regenCoroutine);
             regenCoroutine = null;
-            Debug.Log($"Regen stopped. Reason: {reason}");
+        }
+
+        if (isHealing)
+        {
+            isHealing = false;
+            EnableHealVFX(false);
+            Debug.Log($"Healing stopped. Reason: {reason}");
+        }
+    }
+
+    private void EnableHealVFX(bool enable)
+    {
+        if (healVFX == null) return;
+
+        healVFX.SetActive(enable);
+
+        if (enable)
+        {
+            ParticleSystem ps = healVFX.GetComponent<ParticleSystem>();
+            if (ps != null)
+            {
+                ps.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+                ps.Play();
+            }
         }
     }
 
@@ -219,7 +239,7 @@ public class healthSystem : MonoBehaviour, IDamageable
         Debug.Log($"{gameObject.name} has died.");
         OnDeath?.Invoke();
 
-        StopRegen("Entity died.");
+        StopHealing("Entity died");
 
         if (playerMovement != null)
             playerMovement.enabled = false;
