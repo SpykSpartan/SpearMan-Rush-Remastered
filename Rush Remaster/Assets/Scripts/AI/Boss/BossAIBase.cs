@@ -380,4 +380,26 @@ public abstract class BossAIBase : MonoBehaviour
     }
 
     protected abstract void UseAbility();
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+
+        Gizmos.DrawWireSphere(transform.position, detectionRange);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+
+        Vector3 swordCenter = transform.position + transform.forward * swordRange;
+        Gizmos.color = Color.blue;
+        Gizmos.matrix = Matrix4x4.TRS(swordCenter, transform.rotation, Vector3.one);
+        Gizmos.DrawWireCube(Vector3.zero, swordBoxSize);
+
+        Gizmos.color = Color.magenta;
+        Gizmos.matrix = Matrix4x4.identity;
+        Gizmos.DrawWireSphere(transform.position, areaRadius);
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, dashHitRadius);
+    }
 }

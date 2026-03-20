@@ -14,6 +14,7 @@ public class gameManager : MonoBehaviour
     public RespawnManager RespawnManger;
     public GameObject DeathUI;
     public GameObject WinUI;
+    private bool isPaused = false;
 
     [Header("Boss Settings")]
     private int totalBossCount = 3;
@@ -119,9 +120,10 @@ public class gameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Time.timeScale = 0.0f;
-            pauseMenuUI.SetActive(true);
-            LockCursor(false);
+            if (isPaused)
+                ResumeGame();
+            else
+                PauseGame();
         }
 
         if (Input.GetKeyDown(KeyCode.P))
@@ -129,6 +131,28 @@ public class gameManager : MonoBehaviour
             Debug.Log("P pressed — attempting to load save.");
             SaveSystem.Load();
         }
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+        isPaused = true;
+
+        if (pauseMenuUI != null)
+            pauseMenuUI.SetActive(true);
+
+        LockCursor(false);
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
+        isPaused = false;
+
+        if (pauseMenuUI != null)
+            pauseMenuUI.SetActive(false);
+
+        LockCursor(true);
     }
 
     public void SaveGame()
