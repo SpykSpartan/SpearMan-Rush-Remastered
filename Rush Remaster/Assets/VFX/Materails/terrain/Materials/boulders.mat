@@ -63,7 +63,8 @@ Material:
     - _QueueOffset: 0
     - _blending: 1
     - _normal: 0.01
-    - _tiling: -0.02
+    - _tiling: 0.28
+    - _val: 1
     m_Colors:
     - _Color: {r: 0.3679245, g: 0.35796136, b: 0.2481755, a: 0}
   m_BuildTextureStacks: []
