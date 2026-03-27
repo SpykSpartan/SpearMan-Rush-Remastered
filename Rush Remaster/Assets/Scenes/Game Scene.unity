@@ -1399,7 +1399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2366556797958021442, guid: c6921d6e29403f74fb9fd27af6ab619c, type: 3}
       propertyPath: collisionMask.m_Bits
-      value: 1
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5452860055121891574, guid: c6921d6e29403f74fb9fd27af6ab619c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3485,34 +3485,6 @@ PrefabInstance:
     - target: {fileID: 6704829616085398470, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
       propertyPath: m_Name
       value: Spearman
-      objectReference: {fileID: 0}
-    - target: {fileID: 7654209318585570008, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7654209318585570008, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7654209318585570008, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7654209318585570008, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7654209318585570008, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7654209318585570008, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 7654209318585570008, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8343961172568161492, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
       propertyPath: cameraTransform

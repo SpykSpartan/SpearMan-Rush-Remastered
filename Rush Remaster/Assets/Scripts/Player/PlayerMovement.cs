@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour, IMovementDetector
     [Header("Dodge Settings")]
     public float dodgeSpeed = 12f;
     public float dodgeDuration = 0.2f;
- 
+
     public CharacterController controller;
 
     private Vector3 velocity;
@@ -40,8 +40,8 @@ public class PlayerMovement : MonoBehaviour, IMovementDetector
     private bool isSpecialActive = false;
 
     private Vector3 lastMoveDirection = Vector3.zero;
-    private Vector3 _moveDirection = Vector3.zero; 
-    private bool isSprinting = false;               
+    private Vector3 _moveDirection = Vector3.zero;
+    private bool isSprinting = false;
 
     [SerializeField] private PlayerStat statSystem;
 
@@ -61,12 +61,23 @@ public class PlayerMovement : MonoBehaviour, IMovementDetector
 
     void Update()
     {
+        isGrounded = controller.isGrounded;
+
         HandleMovement();
         HandleJump();
         HandleSpecialAction();
         HandleDodge();
         ApplyGravity();
+
+        UpdateAnimatorJumpValues();
+
         TrackMovementXP();
+    }
+
+    void UpdateAnimatorJumpValues()
+    {
+        animator.SetBool("isGrounded", isGrounded);
+        animator.SetFloat("yVelocity", velocity.y);
     }
 
     public bool IsMoving()
@@ -86,8 +97,6 @@ public class PlayerMovement : MonoBehaviour, IMovementDetector
             _moveDirection = Vector3.zero;
             return;
         }
-
-        isGrounded = controller.isGrounded;
 
         float inputX = Input.GetAxis("Horizontal");
         float inputZ = Input.GetAxis("Vertical");
@@ -152,6 +161,8 @@ public class PlayerMovement : MonoBehaviour, IMovementDetector
         if (Input.GetButtonDown("Jump") && isGrounded && !isSpecialActive)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+
+            animator.ResetTrigger("Jump");
             animator.SetTrigger("Jump");
 
             if (footstepAudio != null)
@@ -182,6 +193,9 @@ public class PlayerMovement : MonoBehaviour, IMovementDetector
 
         Vector3 initialVelocity = bounceDirection * bounceForwardForce * statSystem.dashDistanceMultiplier;
         initialVelocity += Vector3.up * bounceUpwardForce;
+
+        velocity.y = bounceUpwardForce;
+        animator.SetTrigger("Jump");
 
         while (timer < bounceDuration)
         {
@@ -232,7 +246,7 @@ public class PlayerMovement : MonoBehaviour, IMovementDetector
 
     void ApplyGravity()
     {
-        if (controller.isGrounded && velocity.y < 0)
+        if (isGrounded && velocity.y < 0)
             velocity.y = -2f;
 
         velocity.y += gravity * Time.deltaTime;
