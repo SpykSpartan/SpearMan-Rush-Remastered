@@ -51,23 +51,24 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _D: 0
+    - _D: 1.28
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Ra: 0
+    - _Ra: 0.49
     - _Rainbow: 0
-    - _Rb: 0
-    - _colorPow: 57.57
-    - _densityScale: 0.92
-    - _distanceVal: 0.5
-    - _noiseDensity: 0.71
-    - _noiseScale: 2.93
+    - _Rb: 0.83
+    - _colorPow: 0.6
+    - _densityScale: 0.12
+    - _distanceVal: 0.22
+    - _noiseDensity: 0.77
+    - _noiseScale: 28.05
+    - _noiseSpeed: 0.29
     - _remove: 0
     - _stepNum: 256
     - _stepSize: 0.1
     m_Colors:
-    - _highlightColor: {r: 1, g: 0.9990684, b: 0, a: 0}
+    - _highlightColor: {r: 0, g: 0.38394117, b: 1, a: 0}
     - _mainColor: {r: 1, g: 0.010471204, b: 0, a: 0}
-    - _sphere: {r: 41.39, g: 27.19, b: 139.88, a: 1.8}
+    - _sphere: {r: 852.7894, g: 64.213, b: 410.7149, a: 2}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
