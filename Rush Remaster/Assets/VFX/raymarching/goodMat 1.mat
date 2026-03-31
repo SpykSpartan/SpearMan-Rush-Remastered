@@ -60,9 +60,9 @@ Material:
     - _colorPow: 1.08
     - _densityScale: 0.92
     - _distanceVal: 0.79
-    - _noiseDensity: 2.39
+    - _noiseDensity: 0.79
     - _noiseScale: 10.91
-    - _noiseSpeed: 0.1
+    - _noiseSpeed: -0.1
     - _remove: 0
     - _stepNum: 256
     - _stepSize: 0.05

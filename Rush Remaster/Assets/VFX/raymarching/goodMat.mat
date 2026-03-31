@@ -69,6 +69,6 @@ Material:
     m_Colors:
     - _highlightColor: {r: 0, g: 0.38394117, b: 1, a: 0}
     - _mainColor: {r: 1, g: 0.010471204, b: 0, a: 0}
-    - _sphere: {r: 852.7894, g: 64.213, b: 410.7149, a: 2}
+    - _sphere: {r: 0, g: 0, b: 0, a: 2}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
