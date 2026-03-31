@@ -40,11 +40,14 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _densityScale: 1
-    - _stepNum: 64
-    - _stepSize: 0.002
+    - _densityScale: 3.86
+    - _dist: -50.52
+    - _stepNum: 512
+    - _stepSize: 0.22
     m_Colors:
-    - _sphere: {r: 852.7894, g: 0, b: 0, a: 2.22}
+    - _color1: {r: 1, g: 0.2688679, b: 0.2688679, a: 0}
+    - _color2: {r: 1, g: 1, b: 1, a: 0}
+    - _sphere: {r: 852.7894, g: 0, b: 0, a: 1.42}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &5638685032636763503
