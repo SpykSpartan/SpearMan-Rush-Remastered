@@ -14367,6 +14367,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 885274354268074738}
+  - component: {fileID: 4840183502289819337}
+  - component: {fileID: 2680949452794050687}
   m_Layer: 6
   m_Name: DEF_Face
   m_TagString: Untagged
@@ -14383,13 +14385,65 @@ Transform:
   m_GameObject: {fileID: 8151065209408997109}
   serializedVersion: 2
   m_LocalRotation: {x: -0.00000005215406, y: -0.00000011903575, z: -4.2710727e-11, w: 1}
-  m_LocalPosition: {x: -3.804483e-10, y: -0.0007147645, z: 0.037039638}
-  m_LocalScale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0, y: -0.0007, z: 0.0462}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2954097261597726401}
   m_Father: {fileID: 4303221320113281608}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4840183502289819337
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8151065209408997109}
+  m_Mesh: {fileID: -1579241630799410176, guid: 55774fbfa343bad4dbf1d6046be1c4b9, type: 3}
+--- !u!23 &2680949452794050687
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8151065209408997109}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e5d0f835121467240a32f86f872c773a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8210731837662540501
 GameObject:
   m_ObjectHideFlags: 0
