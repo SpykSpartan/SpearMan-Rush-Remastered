@@ -144,10 +144,12 @@ public abstract class BossAIBase : MonoBehaviour
         switch (currentState)
         {
             case BossState.SwordAttack:
+                BossHelper.deployExplosion();
                 animator.SetTrigger("WeaponAttack");
                 break;
 
             case BossState.AreaAttack:
+                BossHelper.deployBash();
                 animator.SetTrigger("AreaAttack");
                 break;
 

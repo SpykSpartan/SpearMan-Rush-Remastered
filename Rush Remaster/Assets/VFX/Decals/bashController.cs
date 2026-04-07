@@ -6,12 +6,13 @@ public class bashController : MonoBehaviour
 {
     public Vector3 finalSize;
     public float timer;
+    public GameObject parent;
     float time = 0;
     Vector3 startScale;
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, timer);
+        Destroy(parent, timer);
         startScale = transform.localScale;
 
         StartCoroutine(blowup());

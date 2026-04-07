@@ -1,12 +1,17 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class IronBoss : BossAIBase
 {
+    public GameObject explosion;
+    public GameObject bash;
+    public bool explode;
+    public bool bashnow;
     [Header("Spear Settings")]
     public float spearRange = 4.5f;
-    public Vector3 spearBoxSize = new Vector3(0.8f, 2f, 4.5f); 
+    public Vector3 spearBoxSize = new Vector3(0.8f, 2f, 4.5f);
 
     protected override void SwordSlash()
     {
@@ -22,7 +27,12 @@ public class IronBoss : BossAIBase
         foreach (Collider hit in hits)
         {
             if (hit.TryGetComponent<IDamageable>(out var damageable))
+            {
                 damageable.TakeDamage(swordDamage);
+                Instantiate(explosion, hit.gameObject.transform.position, Quaternion.identity);
+            }
+                
+
         }
 
         Debug.Log("Spear stab!");
@@ -31,6 +41,7 @@ public class IronBoss : BossAIBase
     protected override void AreaAttack()
     {
         base.AreaAttack();
+
         Debug.Log("Spear boss shockwave AoE");
     }
 
@@ -57,5 +68,20 @@ public class IronBoss : BossAIBase
     protected override void UseAbility()
     {
         
+    }
+
+    IEnumerator deployBash()
+    {
+        yield return new WaitForSeconds(3.125f);
+
+        Instantiate(bash, transform.position + new Vector3(0, 3f, 0), Quaternion.Euler(new Vector3(90, 0, 0)));
+    }
+
+    IEnumerator deployExplosion()
+    {
+        Vector3 pos = GameObject.Find("Spearman").transform.position;
+        Instantiate(explosion, pos, Quaternion.identity);
+
+        yield break;
     }
 }

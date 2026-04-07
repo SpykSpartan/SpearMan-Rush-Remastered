@@ -60,6 +60,7 @@ Material:
     - _colorPow: 635.5
     - _densityScale: 0.92
     - _distanceVal: 0.79
+    - _fogMult: 1
     - _noiseDensity: 0.88
     - _noiseScale: 84.58
     - _noiseSpeed: 0.1
