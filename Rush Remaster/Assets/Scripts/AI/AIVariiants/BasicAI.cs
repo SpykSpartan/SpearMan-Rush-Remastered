@@ -12,6 +12,8 @@ public class BasicAI : EnemyAIBase
     public float hitboxActiveDuration = 0.5f;
     public List<string> attackAnimationTriggers = new List<string>();
 
+    [SerializeField] private string parryTrigger = "Parried";
+
     [Header("Animator")]
     [SerializeField] private Animator animator;
 
@@ -22,6 +24,15 @@ public class BasicAI : EnemyAIBase
     protected override void Awake()
     {
         base.Awake();
+
+        if (player != null)
+        {
+            healthSystem playerHealth = player.GetComponent<healthSystem>();
+            if (playerHealth != null)
+            {
+                playerHealth.OnParry += HandleParry;
+            }
+        }
 
         attackHitbox = GetComponentInChildren<AttackHitbox>(true);
         if (attackHitbox != null)
@@ -37,9 +48,14 @@ public class BasicAI : EnemyAIBase
         attackSFX = GetComponent<PlayerAttackAudioManager>();
     }
 
-    private void Start()
+    void Start()
     {
-        StartCoroutine(EnableBehaviorAfterDelay(2f));
+        if (player != null)
+        {
+            var hp = player.GetComponent<healthSystem>();
+            if (hp != null)
+                hp.OnParry += HandleParry;
+        }
     }
 
     private IEnumerator EnableBehaviorAfterDelay(float delay)
@@ -87,6 +103,22 @@ public class BasicAI : EnemyAIBase
             agent.ResetPath();
             animator.SetBool("BasicMovement", false);
         }
+    }
+
+    
+        void HandleParry(GameObject attacker)
+        {
+            if (attacker == gameObject)
+            {
+                animator.SetTrigger("Parried");
+            }
+        }
+
+    private IEnumerator StunCoroutine(float duration)
+    {
+        behaviorEnabled = false;
+        yield return new WaitForSeconds(duration);
+        behaviorEnabled = true;
     }
 
     protected override void Attack()

@@ -48,23 +48,20 @@ public class gameManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Time.timeScale = 1f;
-        if (PlayerMovement == null)
-            PlayerMovement = FindObjectOfType<PlayerMovement>();
 
-        if (PlayerStatics == null)
-            PlayerStatics = FindObjectOfType<PlayerStat>();
+        PlayerMovement = FindObjectOfType<PlayerMovement>();
+        PlayerStatics = FindObjectOfType<PlayerStat>();
+        RespawnManger = FindObjectOfType<RespawnManager>();
+        FastTravelManager = FindObjectOfType<FastTravelManager>();
 
-        if (RespawnManger == null)
-            RespawnManger = FindObjectOfType<RespawnManager>();
+        DeathUI = GameObject.Find("Death UI");
+        WinUI = GameObject.Find("Win UI");
+        pauseMenuUI = GameObject.Find("PauseMenuUI");
 
-        if (DeathUI == null)
-            DeathUI = GameObject.Find("Death UI");
-
-        if (FastTravelManager == null)
-            FastTravelManager = FindObjectOfType<FastTravelManager>();
+        LockCursor(true);
     }
 
     public void ReportBossDefeated(string bossName)

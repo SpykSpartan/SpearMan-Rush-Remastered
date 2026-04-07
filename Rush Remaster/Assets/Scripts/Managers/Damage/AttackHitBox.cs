@@ -24,10 +24,20 @@ public class AttackHitbox : MonoBehaviour
         if (other.CompareTag("Player") && !damagedTargets.Contains(other.gameObject))
         {
             IDamageable damageable = other.GetComponent<IDamageable>();
+
             if (damageable != null && parentAI != null)
             {
-                damageable.TakeDamage(parentAI.attackDamage);
+                if (damageable is healthSystem hs)
+                {
+                    hs.TakeDamage(parentAI.attackDamage, parentAI.gameObject);
+                }
+                else
+                {
+                    damageable.TakeDamage(parentAI.attackDamage);
+                }
+
                 damagedTargets.Add(other.gameObject);
+
                 Debug.Log($"[{name}] Hit {other.name} for {parentAI.attackDamage} damage");
             }
         }
