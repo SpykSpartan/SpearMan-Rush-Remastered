@@ -11701,6 +11701,8 @@ GameObject:
   - component: {fileID: 1883070286549388775}
   - component: {fileID: 5477878888180504577}
   - component: {fileID: 2269044861925937282}
+  - component: {fileID: 2890137389794121736}
+  - component: {fileID: 3964052843263998964}
   m_Layer: 6
   m_Name: Spearman
   m_TagString: Player
@@ -12204,6 +12206,50 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &2890137389794121736
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6704829616085398470}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &3964052843263998964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6704829616085398470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd594631dac0ebb4fbb4db989ceef8bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerupUnlocked: 1
+  powerupIndex: 0
+  stats: {fileID: 6908776457626319737}
+  controller: {fileID: 2639861480193171504}
+  rb: {fileID: 2890137389794121736}
 --- !u!1 &6742988745116410119
 GameObject:
   m_ObjectHideFlags: 0
