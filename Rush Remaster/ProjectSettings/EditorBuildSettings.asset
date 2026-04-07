@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/newBossBattle.unity
     guid: a4363ea6c4f489e46bba1ebf6639bd21
+  - enabled: 1
+    path: Assets/Scenes/Platformer.unity
+    guid: 930992b11848400448d7df8c590c5355
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

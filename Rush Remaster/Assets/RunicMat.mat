@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: magicMat
+  m_Name: RunicMat
   m_Shader: {fileID: -6465566751694194690, guid: 910241f1e43806b4ca366c6f12042e06, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -49,8 +49,8 @@ Material:
     - _rotation: 0
     m_Colors:
     - _Offset: {r: 0, g: 0.08, b: 0, a: 0}
-    - _Tiling: {r: 1, g: 10.9, b: 0, a: 0}
-    - _color: {r: 15.999998, g: 2.7479568, b: 0, a: 0}
+    - _Tiling: {r: 0.58, g: 0.86, b: 0, a: 0}
+    - _color: {r: 21.361246, g: 1.0233485, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &8125568872913419092

@@ -191,6 +191,26 @@ public class gameManager : MonoBehaviour
         SceneManager.LoadScene("newBossBattle");
     }
 
+    public void GoToDungeon()
+    {
+        if (zoneManager.Instance != null)
+            Destroy(zoneManager.Instance.gameObject);
+
+        Destroy(this.gameObject);
+
+        SceneManager.LoadScene("Platformer");
+    }
+
+    public void GoToMap()
+    {
+        if (zoneManager.Instance != null)
+            Destroy(zoneManager.Instance.gameObject);
+
+        Destroy(this.gameObject);
+
+        SceneManager.LoadScene("Game Scene");
+    }
+
     private void LockCursor(bool shouldLock)
     {
         Cursor.visible = !shouldLock;
