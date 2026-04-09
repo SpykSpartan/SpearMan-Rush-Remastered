@@ -11919,7 +11919,6 @@ MonoBehaviour:
   healVFX: {fileID: 8370162727775269828}
   hitVFXDuration: 0.5
   healVFXDuration: 0.25
-  vfxSpawnPoint: {fileID: 5884809603027711908}
   enableLowHealthPostFX: 1
   lowHealthThreshold: 25
   postProcessController: {fileID: 0}
@@ -12245,7 +12244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd594631dac0ebb4fbb4db989ceef8bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerupUnlocked: 1
+  powerupUnlocked: 0
   powerupIndex: 0
   stats: {fileID: 6908776457626319737}
   controller: {fileID: 2639861480193171504}

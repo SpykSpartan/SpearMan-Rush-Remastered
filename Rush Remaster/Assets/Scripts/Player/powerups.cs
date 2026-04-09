@@ -10,6 +10,7 @@ public class powerups : MonoBehaviour
     public PlayerStat stats;
     public CharacterController controller;
     public Rigidbody rb;
+    public powerupManager powerupManager;
 
     bool isBuffed = false;
     // Start is called before the first frame update
@@ -21,43 +22,23 @@ public class powerups : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(powerupManager.hasPower)
         if (Input.GetKeyDown(KeyCode.F) && !isBuffed)
         {
             StartCoroutine(StartRegen());
         }
     }
 
-    bool IsNotMoving()
-    {
-        float threshold = 0.1f;
-
-        bool rbStill = true;
-        if (rb != null)
-        {
-            Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-            rbStill = flatVel.magnitude < threshold;
-        }
-
-        bool ccStill = true;
-        if (controller != null)
-        {
-            Vector3 flatVel = new Vector3(controller.velocity.x, 0f, controller.velocity.z);
-            ccStill = flatVel.magnitude < threshold;
-        }
-
-        return rbStill && ccStill;
-    }
-
     IEnumerator StartRegen()
     {
         isBuffed = true;
             Debug.Log("buffed");
-        if (powerupIndex == 1)
+        if (powerupManager.power == 1)
         {
             stats.damageMultiplier = 2f;
             stats.healthMultiplier = 2f;
         }
-        else if (powerupIndex == 2)
+        else if (powerupManager.power == 2)
         {
             stats.speedMultiplier = 2f;
             stats.dashDistanceMultiplier = 2f;
