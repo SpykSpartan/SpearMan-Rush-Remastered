@@ -10,7 +10,7 @@ public class powerupManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.Find("Spearman").GetComponent<powerups>();
     }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class powerupManager : MonoBehaviour
     public void assignPowerup()
     {
         power = Random.Range(1, 2);
-        player.powerupUnlocked = true;
+        hasPower = true;
         player.powerupIndex = power;
     }
 }

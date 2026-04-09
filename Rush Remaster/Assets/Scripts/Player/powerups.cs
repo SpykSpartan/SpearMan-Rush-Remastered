@@ -22,11 +22,14 @@ public class powerups : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(powerupManager.hasPower)
-        if (Input.GetKeyDown(KeyCode.F) && !isBuffed)
+        if (powerupManager.hasPower)
         {
-            StartCoroutine(StartRegen());
+            if (Input.GetKeyDown(KeyCode.F) && !isBuffed)
+            {
+                StartCoroutine(StartRegen());
+            }
         }
+        
     }
 
     IEnumerator StartRegen()
