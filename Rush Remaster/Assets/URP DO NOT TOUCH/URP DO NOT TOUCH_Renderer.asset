@@ -31,11 +31,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   m_Settings:
-    technique: 2
+    technique: 1
     maxDrawDistance: 1000
     decalLayers: 0
     dBufferSettings:
-      surfaceData: 2
+      surfaceData: 1
     screenSpaceSettings:
       normalBlend: 0
   m_CopyDepthPS: {fileID: 4800000, guid: d6dae50ee9e1bfa4db75f19f99355220, type: 3}
@@ -67,9 +67,8 @@ MonoBehaviour:
   - {fileID: -6507593343971244242}
   - {fileID: 5173443616060411973}
   - {fileID: 253113234931861121}
-  - {fileID: 7119453274546550201}
   - {fileID: -2073964040611755232}
-  m_RendererFeatureMap: 2ec7e5155562b0a54510cb088fc3cb4781461068253d8303b9b556600861cd62200b6782b1cc37e3
+  m_RendererFeatureMap: 2ec7e5155562b0a54510cb088fc3cb4781461068253d8303200b6782b1cc37e3
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -141,21 +140,4 @@ MonoBehaviour:
   passMaterial: {fileID: 2100000, guid: fd72090a570b4f64d933ba83eaf6f0e1, type: 2}
   injectionPoint: 600
   requirements: 0
-  passIndex: 0
---- !u!114 &7119453274546550201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b00045f12942b46c698459096c89274e, type: 3}
-  m_Name: FullScreenPassRendererFeature
-  m_EditorClassIdentifier: 
-  m_Active: 0
-  passMaterial: {fileID: 2100000, guid: 899136e1daa49dd48bdd22ac9a6194f3, type: 2}
-  injectionPoint: 450
-  requirements: -1
   passIndex: 0
