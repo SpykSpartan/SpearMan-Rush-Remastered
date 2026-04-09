@@ -3366,18 +3366,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 648134339340999330, guid: 283dca1cc8e152340a62d065f754a85d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 136.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 648134339340999330, guid: 283dca1cc8e152340a62d065f754a85d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 52.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 648134339340999330, guid: 283dca1cc8e152340a62d065f754a85d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 39.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 648134339340999330, guid: 283dca1cc8e152340a62d065f754a85d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 768.1
       objectReference: {fileID: 0}
@@ -3421,17 +3409,9 @@ PrefabInstance:
       propertyPath: popupToShow
       value: 
       objectReference: {fileID: 1579636537}
-    - target: {fileID: 4242315686609835088, guid: 283dca1cc8e152340a62d065f754a85d, type: 3}
-      propertyPath: triggerOnce
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5690154101790930282, guid: 283dca1cc8e152340a62d065f754a85d, type: 3}
       propertyPath: m_Name
       value: Boss Trigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 5690154101790930282, guid: 283dca1cc8e152340a62d065f754a85d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4759,7 +4739,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8787186456529046992, guid: 17ed84649beded149b72f3896bdfe451, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
