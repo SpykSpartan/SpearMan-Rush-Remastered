@@ -3420,7 +3420,7 @@ PrefabInstance:
     - target: {fileID: 4242315686609835088, guid: 283dca1cc8e152340a62d065f754a85d, type: 3}
       propertyPath: popupToShow
       value: 
-      objectReference: {fileID: 1579636537}
+      objectReference: {fileID: 0}
     - target: {fileID: 4242315686609835088, guid: 283dca1cc8e152340a62d065f754a85d, type: 3}
       propertyPath: triggerOnce
       value: 1
@@ -40350,7 +40350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4035342423892530830, guid: cbc2c10cc102fd64cbeda86736d78c95, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4035838112393346318, guid: cbc2c10cc102fd64cbeda86736d78c95, type: 3}
       propertyPath: m_IsActive
