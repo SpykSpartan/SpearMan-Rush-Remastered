@@ -19593,6 +19593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon Popup
       objectReference: {fileID: 0}
+    - target: {fileID: 8787186456529046992, guid: 17ed84649beded149b72f3896bdfe451, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38754,6 +38758,10 @@ PrefabInstance:
     - target: {fileID: 8787186456529046992, guid: 17ed84649beded149b72f3896bdfe451, type: 3}
       propertyPath: m_Name
       value: BossPopup
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787186456529046992, guid: 17ed84649beded149b72f3896bdfe451, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
