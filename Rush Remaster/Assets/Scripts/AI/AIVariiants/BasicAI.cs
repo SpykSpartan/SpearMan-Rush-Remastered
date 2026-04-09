@@ -12,16 +12,30 @@ public class BasicAI : EnemyAIBase
     public float hitboxActiveDuration = 0.5f;
     public List<string> attackAnimationTriggers = new List<string>();
 
+    [Header("Parry Settings")]
+    [SerializeField] private string parryTrigger = "Parried";
+    [SerializeField] private float parryStunDuration = 1.0f;
+
     [Header("Animator")]
     [SerializeField] private Animator animator;
 
     private AttackHitbox attackHitbox;
-
     private PlayerAttackAudioManager attackSFX;
+
+    private bool isStunned = false;
 
     protected override void Awake()
     {
         base.Awake();
+
+        if (player != null)
+        {
+            healthSystem playerHealth = player.GetComponent<healthSystem>();
+            if (playerHealth != null)
+            {
+                playerHealth.OnParry += HandleParry;
+            }
+        }
 
         attackHitbox = GetComponentInChildren<AttackHitbox>(true);
         if (attackHitbox != null)
@@ -37,22 +51,56 @@ public class BasicAI : EnemyAIBase
         attackSFX = GetComponent<PlayerAttackAudioManager>();
     }
 
-    private void Start()
+    private void OnDestroy()
     {
-        StartCoroutine(EnableBehaviorAfterDelay(2f));
+        if (player != null)
+        {
+            healthSystem playerHealth = player.GetComponent<healthSystem>();
+            if (playerHealth != null)
+            {
+                playerHealth.OnParry -= HandleParry;
+            }
+        }
     }
 
-    private IEnumerator EnableBehaviorAfterDelay(float delay)
+    void HandleParry(GameObject attacker)
     {
-        currentState = AIState.Patrol;
-        behaviorEnabled = false;
-        yield return new WaitForSeconds(delay);
-        behaviorEnabled = true;
-        canTransition = true;
+        if (attacker == null) return;
+
+        if (attacker.transform.root != transform.root) return;
+
+        Debug.Log("Enemy Parried!");
+
+        isStunned = true;
+
+        agent.isStopped = true;
+        agent.ResetPath();
+
+        if (attackHitbox != null)
+            attackHitbox.DisableHitbox();
+
+        animator.SetBool("BasicMovement", false);
+        animator.SetTrigger(parryTrigger);
+
+        StartCoroutine(StunCoroutine(parryStunDuration));
+    }
+
+    private IEnumerator StunCoroutine(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+
+        isStunned = false;
+
+        agent.isStopped = false;
+        agent.ResetPath();
+
+        currentState = AIState.Chase;
     }
 
     protected override void Patrol()
     {
+        if (isStunned) return;
+
         if (patrolTargets.Count == 0)
             GenerateRandomPatrolPoints();
 
@@ -69,7 +117,7 @@ public class BasicAI : EnemyAIBase
 
     protected override void Chase()
     {
-        if (player == null || holdPosition) return;
+        if (isStunned || player == null || holdPosition) return;
 
         agent.speed = AISpeed;
         Vector3 targetPosition = player.position + formationOffset;
@@ -91,7 +139,7 @@ public class BasicAI : EnemyAIBase
 
     protected override void Attack()
     {
-        if (player == null || attackAnimationTriggers.Count == 0) return;
+        if (isStunned || player == null || attackAnimationTriggers.Count == 0) return;
 
         float distance = Vector3.Distance(transform.position, player.position);
 
@@ -117,6 +165,8 @@ public class BasicAI : EnemyAIBase
 
     protected override void Idle()
     {
+        if (isStunned) return;
+
         agent.SetDestination(transform.position);
         animator.SetBool("BasicMovement", false);
     }
@@ -132,6 +182,8 @@ public class BasicAI : EnemyAIBase
 
     protected override void CheckTransitions()
     {
+        if (isStunned) return;
+
         base.CheckTransitions();
     }
 }

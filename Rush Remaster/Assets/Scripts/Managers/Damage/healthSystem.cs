@@ -21,6 +21,9 @@ public class healthSystem : MonoBehaviour, IDamageable
     public delegate void DeathEvent();
     public event DeathEvent OnDeath;
 
+    public delegate void ParryEvent(GameObject attacker);
+    public event ParryEvent OnParry;
+
     private PlayerStat statSystem;
 
     public bool isInvulnerable = false;
@@ -42,7 +45,6 @@ public class healthSystem : MonoBehaviour, IDamageable
     public GameObject healVFX;
     public float hitVFXDuration = 0.25f;
     public float healVFXDuration = 0.25f;
-    public Transform vfxSpawnPoint;
 
     private PlayerMovement playerMovement;
     private UnityEngine.AI.NavMeshAgent aiAgent;
@@ -94,7 +96,18 @@ public class healthSystem : MonoBehaviour, IDamageable
 
     public void TakeDamage(int amount)
     {
-        if (IsDead || isInvulnerable) return;
+        TakeDamage(amount, null);
+    }
+
+    public bool TakeDamage(int amount, GameObject attacker = null)
+    {
+        if (IsDead) return false;
+
+        if (isInvulnerable)
+        {
+            OnParried(attacker);
+            return false;
+        }
 
         currentHealth -= amount;
         currentHealth = Mathf.Max(0, currentHealth);
@@ -105,6 +118,7 @@ public class healthSystem : MonoBehaviour, IDamageable
         SpawnHitVFX();
 
         Debug.Log($"{gameObject.name} took {amount} damage. Health now: {currentHealth}");
+
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
         CheckLowHealthPostFX();
 
@@ -112,6 +126,17 @@ public class healthSystem : MonoBehaviour, IDamageable
             Die();
         else
             StopHealing("Took damage");
+
+        return true;
+    }
+
+    private void OnParried(GameObject attacker)
+    {
+        Debug.Log("Parry successful! Attacker: " + (attacker != null ? attacker.name : "NULL"));
+
+        if (attacker == null) return;
+
+        OnParry?.Invoke(attacker);
     }
 
     private void SpawnHitVFX()
@@ -246,13 +271,7 @@ public class healthSystem : MonoBehaviour, IDamageable
         if (isBoss && !string.IsNullOrEmpty(bossID))
         {
             if (gameManager.Instance != null)
-            {
                 gameManager.Instance.ReportBossDefeated(bossID);
-            }
-            else
-            {
-                Debug.LogWarning("GameManager instance not found!");
-            }
         }
 
         StopHealing("Entity died");
