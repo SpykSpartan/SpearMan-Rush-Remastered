@@ -202,7 +202,6 @@ MonoBehaviour:
   healVFX: {fileID: 0}
   hitVFXDuration: 0.25
   healVFXDuration: 0.25
-  vfxSpawnPoint: {fileID: 0}
   enableLowHealthPostFX: 1
   lowHealthThreshold: 25
   postProcessController: {fileID: 0}
@@ -739,6 +738,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5884809603027711908, guid: 2f7e7520b0c1b3c40ad80bdecaf45b08, type: 3}
   m_PrefabInstance: {fileID: 1082978641}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1476416389
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6073284562477793191, guid: 8e7282f298d0b184090c089da5c74af9, type: 3}
+      propertyPath: m_Name
+      value: Asian NPC 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715492852839173889, guid: 8e7282f298d0b184090c089da5c74af9, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1147259796}
+    - target: {fileID: 7545130711763674291, guid: 8e7282f298d0b184090c089da5c74af9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 527.2433
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545130711763674291, guid: 8e7282f298d0b184090c089da5c74af9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545130711763674291, guid: 8e7282f298d0b184090c089da5c74af9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -187.77332
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545130711763674291, guid: 8e7282f298d0b184090c089da5c74af9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545130711763674291, guid: 8e7282f298d0b184090c089da5c74af9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545130711763674291, guid: 8e7282f298d0b184090c089da5c74af9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545130711763674291, guid: 8e7282f298d0b184090c089da5c74af9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545130711763674291, guid: 8e7282f298d0b184090c089da5c74af9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545130711763674291, guid: 8e7282f298d0b184090c089da5c74af9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545130711763674291, guid: 8e7282f298d0b184090c089da5c74af9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e7282f298d0b184090c089da5c74af9, type: 3}
 --- !u!1 &1640569518
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,7 +882,6 @@ MonoBehaviour:
   healVFX: {fileID: 0}
   hitVFXDuration: 0.25
   healVFXDuration: 0.25
-  vfxSpawnPoint: {fileID: 0}
   enableLowHealthPostFX: 1
   lowHealthThreshold: 25
   postProcessController: {fileID: 0}
@@ -1239,6 +1298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss Trigger
       objectReference: {fileID: 0}
+    - target: {fileID: 5690154101790930282, guid: 283dca1cc8e152340a62d065f754a85d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1606,6 +1669,10 @@ PrefabInstance:
     - target: {fileID: 2146950199483403997, guid: b380202a3ffa3d740a1d0d6626249b31, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146950199483403997, guid: b380202a3ffa3d740a1d0d6626249b31, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2146950199483403997, guid: b380202a3ffa3d740a1d0d6626249b31, type: 3}
       propertyPath: m_TagString
@@ -2900,6 +2967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossPopup
       objectReference: {fileID: 0}
+    - target: {fileID: 8787186456529046992, guid: 17ed84649beded149b72f3896bdfe451, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2996,6 +3067,10 @@ PrefabInstance:
     - target: {fileID: 4285344546441463665, guid: 0e32b069ca64ba342af9a93c57fe5b73, type: 3}
       propertyPath: m_Name
       value: Boss UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285344546441463665, guid: 0e32b069ca64ba342af9a93c57fe5b73, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7190066263591594925, guid: 0e32b069ca64ba342af9a93c57fe5b73, type: 3}
       propertyPath: targetHealth
@@ -3227,3 +3302,4 @@ SceneRoots:
   - {fileID: 675239375}
   - {fileID: 3569101092429637499}
   - {fileID: 576533061241042845}
+  - {fileID: 1476416389}

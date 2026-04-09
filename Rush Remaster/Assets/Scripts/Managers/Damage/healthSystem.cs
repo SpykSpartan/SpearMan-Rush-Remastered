@@ -94,7 +94,6 @@ public class healthSystem : MonoBehaviour, IDamageable
         CheckLowHealthPostFX();
     }
 
-    // 🔥 REQUIRED BY INTERFACE (fixes your error)
     public void TakeDamage(int amount)
     {
         TakeDamage(amount, null);
@@ -133,7 +132,10 @@ public class healthSystem : MonoBehaviour, IDamageable
 
     private void OnParried(GameObject attacker)
     {
-        Debug.Log("Parry successful!");
+        Debug.Log("Parry successful! Attacker: " + (attacker != null ? attacker.name : "NULL"));
+
+        if (attacker == null) return;
+
         OnParry?.Invoke(attacker);
     }
 

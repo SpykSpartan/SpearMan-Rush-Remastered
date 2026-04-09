@@ -78,7 +78,7 @@ public class PlayerAttack : MonoBehaviour
         else attackSFX.PlayMiss();
     }
 
-    private bool PerformStabBox()
+   private bool PerformStabBox()
     {
         bool didHit = false;
 
@@ -102,7 +102,9 @@ public class PlayerAttack : MonoBehaviour
             if (hit.TryGetComponent<IDamageable>(out var damageable))
             {
                 float modDamage = Mathf.Round(stabDamage * statSystem.damageMultiplier);
-                damageable.TakeDamage((int)modDamage);
+
+                GameObject enemy = hit.transform.root.gameObject;
+                damageable.TakeDamage((int)modDamage, enemy);
 
                 statSystem.RegisterDamageAction();
                 didHit = true;
@@ -146,7 +148,9 @@ public class PlayerAttack : MonoBehaviour
             if (hit.TryGetComponent<IDamageable>(out var damageable))
             {
                 float modDamage = Mathf.Round(slashDamage * statSystem.damageMultiplier);
-                damageable.TakeDamage((int)modDamage);
+
+                GameObject enemy = hit.transform.root.gameObject;
+                damageable.TakeDamage((int)modDamage, enemy);
 
                 statSystem.RegisterDamageAction();
                 didHit = true;
