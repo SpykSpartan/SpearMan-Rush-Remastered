@@ -40348,6 +40348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map
       objectReference: {fileID: 0}
+    - target: {fileID: 4035342423892530830, guid: cbc2c10cc102fd64cbeda86736d78c95, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4035838112393346318, guid: cbc2c10cc102fd64cbeda86736d78c95, type: 3}
       propertyPath: m_IsActive
       value: 1
