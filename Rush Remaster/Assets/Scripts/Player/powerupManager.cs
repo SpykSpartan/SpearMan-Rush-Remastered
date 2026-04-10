@@ -7,6 +7,10 @@ public class powerupManager : MonoBehaviour
     public bool hasPower = false;
     public int power = 0;
     public powerups player;
+    public Powerupdata PD;
+
+    public GameObject screechTxt;
+    public GameObject creechTxt;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +25,17 @@ public class powerupManager : MonoBehaviour
 
     public void assignPowerup()
     {
-        power = Random.Range(1, 2);
-        hasPower = true;
-        player.powerupIndex = power;
+        PD.powerupIndex = Random.Range(1, 2);
+
+        if(PD.powerupIndex == 1)
+        {
+            screechTxt.SetActive(true);
+        }
+        else 
+        { 
+            creechTxt.SetActive(true);
+        }
+            PD.powered = true;
+        //player.powerupIndex = power;
     }
 }

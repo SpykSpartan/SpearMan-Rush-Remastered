@@ -36,6 +36,8 @@ public class gameManager : MonoBehaviour
         }
 
         LockCursor(true);
+
+        
     }
 
     private void OnEnable()
@@ -62,6 +64,11 @@ public class gameManager : MonoBehaviour
         pauseMenuUI = GameObject.Find("PauseMenuUI");
 
         LockCursor(true);
+    }
+
+    private void Start()
+    {
+        
     }
 
     public void ReportBossDefeated(string bossName)
