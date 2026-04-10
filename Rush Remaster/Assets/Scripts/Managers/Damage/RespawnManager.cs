@@ -6,6 +6,7 @@ public class RespawnManager : MonoBehaviour
     public Transform player;
     public FastTravelManager fastTravelManager;
     public string respawnPointName = "DefaultSpawn";
+    public respawndata RD;
 
     private healthSystem playerHealth;
     public GameObject deathMenuUI;
@@ -59,7 +60,7 @@ public class RespawnManager : MonoBehaviour
         playerHealth.UpdateMaxHealth();
         playerHealth.ForceSetHealth(playerHealth.maxHealth);
 
-        fastTravelManager.FastTravelTo(respawnPointName);
+        fastTravelManager.FastTravelTo(RD.spawnPos);
 
         LockCursor(true);
     }

@@ -22,7 +22,7 @@ public class powerups : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (powerupManager.hasPower)
+        if (powerupManager.PD.powered)
         {
             if (Input.GetKeyDown(KeyCode.F) && !isBuffed)
             {
@@ -36,12 +36,12 @@ public class powerups : MonoBehaviour
     {
         isBuffed = true;
             Debug.Log("buffed");
-        if (powerupManager.power == 1)
+        if (powerupManager.PD.powerupIndex == 1)
         {
             stats.damageMultiplier = 2f;
             stats.healthMultiplier = 2f;
         }
-        else if (powerupManager.power == 2)
+        else if (powerupManager.PD.powerupIndex == 2)
         {
             stats.speedMultiplier = 2f;
             stats.dashDistanceMultiplier = 2f;
