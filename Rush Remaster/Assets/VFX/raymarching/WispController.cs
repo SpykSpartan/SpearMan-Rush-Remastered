@@ -8,6 +8,7 @@ public class WispController : MonoBehaviour
     public float size;
     float currSize;
     public string[] dialogue;
+    public Transform playerPos;
     public GameObject dialogueObj;
     public bool started;
     public MeshRenderer MR;
@@ -22,7 +23,14 @@ public class WispController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(playerPos != null)
+        {
+            Vector3 facing = transform.position - playerPos.position;
+            facing = facing.normalized;
+            //facing *= -1f;
+
+            transform.forward = facing;
+        }
         
     }
 

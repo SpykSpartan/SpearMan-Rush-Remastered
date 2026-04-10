@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5890765379662564867}
   - component: {fileID: 3221137811060182736}
   - component: {fileID: 602648024141421297}
+  - component: {fileID: 7526248207781523043}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -55,6 +56,7 @@ MonoBehaviour:
   RespawnManger: {fileID: 3221137811060182736}
   DeathUI: {fileID: 0}
   WinUI: {fileID: 0}
+  popupUI: {fileID: 0}
   pauseMenuUI: {fileID: 0}
 --- !u!114 &5877481124281305498
 MonoBehaviour:
@@ -116,6 +118,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 0}
   spawnPoints: []
+--- !u!114 &7526248207781523043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3860662084788239543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2648a17dacf4043459dcb396acee5218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasPower: 0
+  power: 0
+  player: {fileID: 0}
 --- !u!1001 &3700737977328436660
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -163,7 +163,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2163838992371791085}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01977, y: 0.01977, z: 0.01977}
   m_ConstrainProportionsScale: 0
@@ -173,7 +173,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.352, y: 0.869}
+  m_AnchoredPosition: {x: 0.352, y: 1.5}
   m_SizeDelta: {x: 1024, y: 576}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1475094712596335213
@@ -392,6 +392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   size: 1
   dialogue: []
+  playerPos: {fileID: 0}
   dialogueObj: {fileID: 890064563669529511}
   started: 0
   MR: {fileID: 5901700915559407259}
