@@ -194,7 +194,7 @@ public class PlayerMovement : MonoBehaviour, IMovementDetector
         Vector3 initialVelocity = bounceDirection * bounceForwardForce * statSystem.dashDistanceMultiplier;
         initialVelocity += Vector3.up * bounceUpwardForce;
 
-        velocity.y = bounceUpwardForce;
+        velocity.y = bounceUpwardForce * 0.1f;
         animator.SetTrigger("Jump");
 
         while (timer < bounceDuration)

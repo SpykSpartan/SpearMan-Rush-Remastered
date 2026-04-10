@@ -18,6 +18,10 @@ public class spawnshifter : MonoBehaviour
         {
             CC.transform.position = new Vector3(1004, 13, -55);
         }
+        else
+        {
+            CC.transform.position = new Vector3(681, -33, 471);
+        }
     }
 
     // Update is called once per frame
