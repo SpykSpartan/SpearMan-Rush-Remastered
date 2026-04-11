@@ -20,7 +20,7 @@ public class spawnshifter : MonoBehaviour
         }
         else
         {
-            CC.transform.position = new Vector3(681, -33, 471);
+            CC.transform.position = new Vector3(685, -32, 471);
         }
     }
 

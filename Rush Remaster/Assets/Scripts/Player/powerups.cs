@@ -11,6 +11,8 @@ public class powerups : MonoBehaviour
     public CharacterController controller;
     public Rigidbody rb;
     public powerupManager powerupManager;
+    public GameObject blue;
+    public GameObject red;
 
     bool isBuffed = false;
     // Start is called before the first frame update
@@ -26,6 +28,7 @@ public class powerups : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F) && !isBuffed)
             {
+                StopAllCoroutines();
                 StartCoroutine(StartRegen());
             }
         }
@@ -40,11 +43,13 @@ public class powerups : MonoBehaviour
         {
             stats.damageMultiplier = 2f;
             stats.healthMultiplier = 2f;
+            StartCoroutine(displayPower(blue));
         }
         else if (powerupManager.PD.powerupIndex == 2)
         {
             stats.speedMultiplier = 2f;
             stats.dashDistanceMultiplier = 2f;
+            StartCoroutine(displayPower(red));
 
         }
         yield return new WaitForSeconds(30f);
@@ -55,5 +60,14 @@ public class powerups : MonoBehaviour
         stats.healthMultiplier = 1f;
 
         isBuffed = false;
+    }
+
+    IEnumerator displayPower(GameObject VFX)
+    {
+        VFX.SetActive(true);
+
+        yield return new WaitForSeconds(2f);
+
+        VFX.SetActive(false);
     }
 }

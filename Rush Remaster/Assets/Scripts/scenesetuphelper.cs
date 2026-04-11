@@ -20,6 +20,9 @@ public class scenesetuphelper : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        RS.RD.spawnPos = spawnpointname;
+        if(other.gameObject.name == "Spearman")
+        {
+            RS.RD.spawnPos = spawnpointname;
+        }
     }
 }

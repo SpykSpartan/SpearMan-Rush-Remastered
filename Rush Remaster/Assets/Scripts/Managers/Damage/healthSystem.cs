@@ -187,10 +187,13 @@ public class healthSystem : MonoBehaviour, IDamageable
         if (regenCoroutine == null)
         {
             isHealing = true;
-            EnableHealVFX(true);
+            //EnableHealVFX(true);
+            healVFX.SetActive(true);
             regenCoroutine = StartCoroutine(RegenerateHealth());
         }
     }
+
+
 
     private IEnumerator RegenerateHealth()
     {
@@ -224,6 +227,7 @@ public class healthSystem : MonoBehaviour, IDamageable
         {
             StopCoroutine(regenCoroutine);
             regenCoroutine = null;
+            healVFX.SetActive(false);
         }
 
         if (isHealing)

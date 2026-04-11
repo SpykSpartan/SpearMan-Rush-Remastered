@@ -25,7 +25,7 @@ public class powerupManager : MonoBehaviour
 
     public void assignPowerup()
     {
-        PD.powerupIndex = Random.Range(1, 2);
+        PD.powerupIndex = Random.Range(1, 3);
 
         if(PD.powerupIndex == 1)
         {

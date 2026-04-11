@@ -370,6 +370,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 21152259633901932, guid: c6921d6e29403f74fb9fd27af6ab619c, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 4c32008c1e1d18e4199bb8c02cec709b, type: 3}
+    - target: {fileID: 21152259633901932, guid: c6921d6e29403f74fb9fd27af6ab619c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4c32008c1e1d18e4199bb8c02cec709b, type: 3}
     - target: {fileID: 743466793980024507, guid: c6921d6e29403f74fb9fd27af6ab619c, type: 3}
       propertyPath: m_Name
       value: Main Camera
